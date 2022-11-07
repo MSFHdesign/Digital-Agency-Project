@@ -6,7 +6,7 @@
 *Author Jeffrey Serio
 */
 import React, { Component } from 'react'
-import Places from './components/Places'
+import Places from './components/place/Places'
 
 class App extends Component {
 
