@@ -21,6 +21,7 @@
 
   /* Tekst */
     --FontColor: #000000;
+    --Fontsize: 12px;
   
   /* Paddinng margin & snizzle */
 
@@ -52,6 +53,22 @@
   font-size: var(--BTNfontsize);
 }
 
+p {
+  font-size: var(--Fontsize)
+}
+
+h2 {
+  font-size: calc(2* var(--Fontsize));
+}
+
+h3{
+font-size: calc((1.5 * var(--Fontsize)));
+}
+
+h4{
+  text-decoration: solid; 
+  font-size: calc((1.25 * var(--Fontsize)));
+}
 
 body {
   margin: 0;
