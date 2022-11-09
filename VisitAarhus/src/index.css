@@ -56,10 +56,12 @@
 }
 
 p {
-  font-size: var(--Fontsize)
+  font-size: var(--Fontsize);
+  line-height: 32px;
 }
 
 h2 {
+  line-height: 52px;
   font-size: calc(2* var(--Fontsize));
 }
 
