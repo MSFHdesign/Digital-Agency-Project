@@ -32,6 +32,7 @@ function App() {
               <Route path='/*' element={<Fejl/>}/>
               <Route path='/menu' element={<Menu/>}/>
               <Route path='/delete' element ={<DeleteTrip />} />
+              <Route path='/plan' element ={<DeleteTrip />} />
           </Routes>
 
         </div>
