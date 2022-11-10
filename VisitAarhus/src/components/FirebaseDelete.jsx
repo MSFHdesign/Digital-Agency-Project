@@ -21,7 +21,7 @@ export default function DeleteArticle({ id, imageUrl }) {
   return (
     <div>
 
-          <input type="text" id="lname" name="lname"> </input>
+          
 
       <button className="deletebtn" onClick={handleDelete}>
         Delete
