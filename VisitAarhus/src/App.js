@@ -6,6 +6,8 @@ import Home from './Pages/Home.js'
 import Discover from './Pages/discover.js'
 import Personalpage from './Pages/Gunvarsplan.js'
 import Fejl from './Pages/fejl.js';
+import Menu from './components/NavTop/Menu'
+
 import DeleteTrip from './Pages/deleteTrip.js';
 
 // Componenter 
@@ -28,6 +30,7 @@ function App() {
               <Route path='/discover' element={<Discover/>}/>
               <Route path='/Personalspace' element={<Personalpage/>}/>
               <Route path='/*' element={<Fejl/>}/>
+              <Route path='/menu' element={<Menu/>}/>
               <Route path='/delete' element ={<DeleteTrip />} />
           </Routes>
 
