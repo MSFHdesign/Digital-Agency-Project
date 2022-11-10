@@ -87,7 +87,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* FLEXBOX */
 
 .Flexbox {
   display: flex;
@@ -101,4 +101,18 @@ code {
 
 .dirColumn {
   flex-direction: column;
+}
+
+
+/* PAGE container */
+
+.app {
+  min-height: 100vh;
+  margin: var(--Mag);
+}
+
+.BoxContainer {
+  min-height: 100vh;
+  
+  
 }

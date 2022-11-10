@@ -4,9 +4,13 @@ import './basketStyle.css'
 
 
 export default function basket() {
+
+  
   return (
 
-    <Draggable>
+    <Draggable bounds="parent"
+    
+   >
   
   
   <div className='BasketDragable'>IKON!</div>
