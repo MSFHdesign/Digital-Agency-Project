@@ -9,12 +9,12 @@ import { db, storage } from "../firebaseConfig";
 export default function DeleteArticle({ id, imageUrl }) {
   const handleDelete = async () => {
     try {
-      await deleteDoc(doc(db, "articles", id));
-      toast("article deleted successfully", { type: "success" });
+      await deleteDoc(doc(db, "Calenders", id));
+      toast("Calenders deleted successfully", { type: "success" });
       const storageRef = ref(storage, imageUrl);
       await deleteObject(storageRef);
     } catch (error) {
-      toast("Error deleting article", { type: "error" });
+      toast("Error deleting Calenders", { type: "error" });
       console.log(error);
     }
   };
@@ -30,7 +30,7 @@ export default function DeleteArticle({ id, imageUrl }) {
        
       /> 
 
-      <button className="deletebtn" onClick={handleDelete}>
+      <button className="deletebtn" onClick={handleDelete(id)}>
         Delete
       </button>
     </div>
