@@ -21,7 +21,14 @@ export default function DeleteArticle({ id, imageUrl }) {
   return (
     <div>
 
-          
+         <label htmlFor="">Add key <br/></label>
+      <input
+        type="text"
+        name="KalenderNavn"
+        className="form-control"
+        value={id}
+       
+      /> 
 
       <button className="deletebtn" onClick={handleDelete}>
         Delete
