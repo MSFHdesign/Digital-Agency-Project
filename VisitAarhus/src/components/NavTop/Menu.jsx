@@ -1,7 +1,5 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
-import calenderSearch from '../../Picture/icons/'
-
 
 export default function Menu() {
   return (
@@ -15,9 +13,6 @@ export default function Menu() {
             <option value="odense">Odense</option>
         </select>
 
-        <ul>
-            <li>See your trip <calenderSearch/></li>
-        </ul>
 
     </div>
   )
