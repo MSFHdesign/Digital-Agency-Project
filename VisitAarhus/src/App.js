@@ -9,6 +9,7 @@ import Fejl from './Pages/fejl.js';
 import Menu from './components/NavTop/Menu'
 
 import DeleteTrip from './Pages/deleteTrip.js';
+import PlanTrip from './Pages/planTrip.js';
 
 // Componenter 
 import LogoTop from './components/LogoTop/LogoTop' 
@@ -32,6 +33,7 @@ function App() {
               <Route path='/*' element={<Fejl/>}/>
               <Route path='/menu' element={<Menu/>}/>
               <Route path='/delete' element ={<DeleteTrip />} />
+              <Route path='/plan' element ={<PlanTrip />} />
           </Routes>
 
         </div>
