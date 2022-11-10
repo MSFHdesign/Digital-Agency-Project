@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
   return (
-    <div>Nav</div>
+    <div className='burgerMenu'>
+      <NavLink to='/Menu'>
+        <button>Burger</button>
+      </NavLink>
+    </div>
+    
   )
 }
