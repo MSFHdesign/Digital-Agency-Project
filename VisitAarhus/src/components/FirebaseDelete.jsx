@@ -22,7 +22,7 @@ export default function DeleteArticle({ id, imageUrl }) {
       const storageRef = ref(storage, imageUrl);
       await deleteObject(storageRef);
     } catch (error) {
-      toast("Error deleting article", { type: "error" });
+      toast("Error deleting Calenders", { type: "error" });
       console.log(error);
     }
   };
