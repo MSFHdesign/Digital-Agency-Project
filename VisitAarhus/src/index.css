@@ -88,6 +88,8 @@ code {
 /* FLEXBOX */
 
 .Flexbox {
+  padding-top: var(--Pad);
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
 
