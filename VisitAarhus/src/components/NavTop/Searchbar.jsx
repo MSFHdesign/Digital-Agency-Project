@@ -8,6 +8,6 @@ import Date from '../Searchbar/Date.jsx'
 
 export default function Searchbar() {
   return (
-    <div>Searchbar</div>
+    <div className=''> <AdvanceSearch /> <Search /> <Date /> </div>
   )
 }
