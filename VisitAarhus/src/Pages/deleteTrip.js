@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react";
 
-import DeleteFirebase from '../components/FirebaseDelete'
-export default function deleteTrip() {
+import DeleteFirebase from "../components/FirebaseDelete";
+
+export default function DeleteTrip() {
   return (
-    <div><DeleteFirebase/> </div>
-  )
+    <div>
+      <DeleteFirebase />
+    </div>
+  );
 }
