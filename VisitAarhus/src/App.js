@@ -1,14 +1,16 @@
 
 import { Route, Routes } from 'react-router-dom';
 
+// Pages
 import Home from './Pages/Home.js'
 import Discover from './Pages/discover.js'
 import Personalpage from './Pages/Gunvarsplan.js'
 import Fejl from './Pages/fejl.js';
 
+
+// Componenter 
 import LogoTop from './components/LogoTop/LogoTop' 
 import Nav from './components/NavTop/Nav'
-
 import Searchbar from './components/NavTop/Searchbar.jsx'
 
 
