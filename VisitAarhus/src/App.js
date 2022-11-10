@@ -6,7 +6,7 @@ import Home from './Pages/Home.js'
 import Discover from './Pages/discover.js'
 import Personalpage from './Pages/Gunvarsplan.js'
 import Fejl from './Pages/fejl.js';
-
+import DeleteTrip from './Pages/deleteTrip.js';
 
 // Componenter 
 import LogoTop from './components/LogoTop/LogoTop' 
@@ -28,7 +28,7 @@ function App() {
               <Route path='/discover' element={<Discover/>}/>
               <Route path='/Personalspace' element={<Personalpage/>}/>
               <Route path='/*' element={<Fejl/>}/>
-
+              <Route path='/delete' element ={<DeleteTrip />} />
           </Routes>
 
         </div>
