@@ -4,7 +4,10 @@ export default function planTrip() {
   return (
     <div>
       planTrip
-      <AddArticle />
+      <AddArticle/>
+
+        {/*  */}
+
     </div>
   );
 }
