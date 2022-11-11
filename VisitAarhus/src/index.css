@@ -119,13 +119,12 @@ code {
   background-color: var(--Blue);
   border: none;
   color: var(--Hvid);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 72%;
 }
 *:focus {
   outline: 0;
 }
-
 
 .dirColumn {
   flex-direction: column;
@@ -136,6 +135,7 @@ code {
 .app {
   min-height: 100vh;
   margin: var(--Mag);
+  overflow: hidden;
 }
 
 .LogoTop {
@@ -309,5 +309,4 @@ option {
 
 .BoxContainer {
   width: 100vw;
-  height: 100vh;
 }
