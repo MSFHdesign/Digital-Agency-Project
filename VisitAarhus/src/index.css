@@ -119,11 +119,13 @@ code {
   background-color: var(--Blue);
   border: none;
   color: var(--Hvid);
+  font-family: 'Montserrat', sans-serif;
   width: 72%;
 }
 *:focus {
   outline: 0;
 }
+
 
 .dirColumn {
   flex-direction: column;
