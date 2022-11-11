@@ -25,7 +25,7 @@ export default function Places()
            try{
                 for (var i = 0; i < data.length; i++) {
                 var place = data[i];
-               if(place.MainCategory.Id == '62')
+               if(place.MainCategory.Id === 62)
                {
                    // console.log(place.Name + ' ' + place.MainCategory.Name);
                     filteredrest.push(place)
@@ -42,7 +42,7 @@ export default function Places()
 
     return(
     <>
-    <h2>Places To Eat</h2>
+    <h2>  </h2>
         {
            places.map(place =>(<PlaceItem place={place} key={place.id} />))
         }
