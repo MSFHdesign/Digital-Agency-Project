@@ -14,7 +14,7 @@ import LogoTop from './components/LogoTop/LogoTop'
 import Nav from './components/NavTop/Nav'
 import Searchbar from './components/NavTop/Searchbar.jsx'
 import Menu from './components/NavTop/Menu'
-
+import Basket from './components/basket/basket'
 
 function App() {
   return (
@@ -38,6 +38,7 @@ function App() {
 
 
           </Routes>
+          <Basket/>
 
         </div>
     );
