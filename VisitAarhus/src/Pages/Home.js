@@ -7,10 +7,13 @@ export default function Home() {
   return (
   
 
-    <div className='BoxContainer' ><h2>Home</h2>
+    <div className='BoxContainer' >
+      <h2>Home</h2>
     
     
-    <Basket/></div>
+      <Basket/>
+    
+    </div>
  
   
   

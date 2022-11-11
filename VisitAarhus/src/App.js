@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 // Pages
 import Home from './Pages/Home.js'
 import Discover from './Pages/discover.js'
-import Personalpage from './Pages/Gunvarsplan.js'
+import Personalpage from './Pages/Gunvorsplan.js'
 import Fejl from './Pages/fejl.js';
 import DeleteTrip from './Pages/deleteTrip.js';
 import PlanTrip from './Pages/planTrip.js';
