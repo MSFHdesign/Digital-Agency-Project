@@ -4,10 +4,10 @@ import calendarsearch from "../../Picture/icons/menu/calendarsearch.png";
 import calendaradd from "../../Picture/icons/menu/calendaradd.png";
 import magicstar from "../../Picture/icons/menu/magicstar.png";
 import sunfog from "../../Picture/icons/menu/sunfog.png";
-import home from "../../Picture/icons/menu/home.png";
+// import home from "../../Picture/icons/menu/home.png";
 import arrowright from "../../Picture/icons/menu/arrowright.png";
 import Logo from "../../Picture/logos/VisitDK.png";
-import VisitDKLogo from "../../Picture/logos/visitDKLogo.png";
+// import VisitDKLogo from "../../Picture/logos/visitDKLogo.png";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
