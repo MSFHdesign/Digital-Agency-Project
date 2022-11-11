@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
+    "hamburger-react": "^2.5.0",
     "nav": "^0.0.2",
+    "react-animated-burgers": "^1.2.8",
     "react-draggable": "^4.4.5",
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.3"

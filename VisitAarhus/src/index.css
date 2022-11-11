@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
 
 /* https://www.visitdenmark.dk/corporate/branding-danmark/typografi?fbclid=IwAR1C1jyKLnco1kCahlxlCSPjZWwz9x-QKE_YTOGR_MfjgBdKhDGFt1KESzQ */ 
 
@@ -10,7 +12,7 @@
     --Gray2: rgba(207,210,211,1);
     --Hvid: #ffff;
     --Red: rgba(231,0,9,1);
-    --Blue: rgba(2,43,82,1,1);
+    --Blue: rgb(2,43,82);
     --Dkblue: rgba(0,88,122,1);
     --Dkgreen: rgba(0,117,84,1);
     --DkYellow: rgba(219,162,0,1);
@@ -103,7 +105,6 @@ code {
   flex-direction: column;
 }
 
-
 /* PAGE container */
 
 .app {
@@ -112,10 +113,130 @@ code {
 }
 
 .BoxContainer {
-  min-height: 100vh;
-  
-  
+  /* min-height: 100vh;   */
 }
+
 .LogoTop {
   width: 200px;
+}
+
+/* Menu */
+/* burgermenu */
+.gPTVUv {
+  position: absolute;
+  right: 10px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: 6;
+}
+
+/* closed */
+.gBXOry {
+  border-radius: 0 !important;
+  background-color: var(--Red) !important;
+  width: 30px !important;
+}
+
+.gBXOry::before {
+  border-radius: 0 !important;
+  background-color: var(--Red) !important;
+}
+
+.gBXOry::after {
+  border-radius: 0 !important;
+  background-color: var(--Red) !important;
+}
+
+/* open */
+.bhlgCN {
+  border-radius: 0 !important;
+  background-color: var(--Red) !important;
+  width: 30px !important;
+}
+
+.bhlgCN::before {
+  border-radius: 0 !important;
+  background-color: var(--Red) !important;
+  opacity: 1 !important;
+}
+
+.bhlgCN::after {
+  border-radius: 0 !important;
+  background-color: var(--Red) !important;
+}
+
+/* menu content */
+.menu {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--Blue);
+  z-index: 5;
+  transition: height 0.3s ease;
+}
+
+.menu .LogoTop {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.menu-header {
+  color: var(--Hvid);
+  text-align: center;
+  margin: 10px auto 0;
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.selectCity-holder {
+  width: 150px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  color: var(--Hvid);
+  border-width: 0;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+option {
+  font-size: 14px;
+  color: var(--FontColor);
+  
+}
+
+.menuItems {
+  padding: 0;
+  width: 80%;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--Hvid);
+}
+
+.menuItems li {
+  list-style-type: none;
+  width: 260px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto;
+}
+
+.menuItems li p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.menuItems img {
+  width: 40px;
+  height: 40px;
 }
