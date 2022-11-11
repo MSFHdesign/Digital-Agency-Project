@@ -21,6 +21,7 @@ import Basket from './components/basket/basket'
 function App() {
   return (
         <div className="App">
+           <Basket/>
           <div className='HeaderTop Flexbox dirRow'>
           <div className='Fixedbar'><div className='HeaderTop Flexbox dirRow'>
         
@@ -40,7 +41,7 @@ function App() {
 
 
           </Routes>
-          <Basket/>
+         
 
         </div>
     );
