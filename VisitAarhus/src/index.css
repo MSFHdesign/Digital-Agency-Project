@@ -112,21 +112,7 @@ code {
   margin: var(--Mag);
 }
 
-.BoxContainer {
-  /* min-height: 100vh;   */
-}
 
-<<<<<<< Updated upstream
-=======
-.Fixedbar  {
-  width: 100%;
-  border: 2px solid red;
-  position: fixed;
-    top: 0;
-    left: 0;
-}
-
->>>>>>> Stashed changes
 .LogoTop {
   width: 200px;
 }
