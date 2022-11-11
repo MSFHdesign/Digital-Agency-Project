@@ -9,6 +9,8 @@ import DeleteTrip from './Pages/deleteTrip.js';
 import PlanTrip from './Pages/planTrip.js';
 import SeeTrip from './Pages/seeTrip'
 
+
+
 // Componenter 
 import LogoTop from './components/LogoTop/LogoTop' 
 import Nav from './components/NavTop/Nav'
