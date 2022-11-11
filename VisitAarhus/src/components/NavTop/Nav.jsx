@@ -27,7 +27,9 @@ const Nav = () => {
       ></HamburgerSqueeze>
       {isActive && (
         <div className="menu">
-          <img className="LogoTop" src={Logo} alt="Logotop" />
+          <Link to="/" onClick={handleClick}>
+            <img className="LogoTop" src={Logo} alt="Logotop" />
+          </Link>
           <h1 className="menu-header">Select City</h1>
           <select
             defaultValue={"DEFAULT"}
