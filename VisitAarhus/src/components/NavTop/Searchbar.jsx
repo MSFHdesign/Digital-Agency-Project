@@ -9,7 +9,7 @@ import Icon from '../Searchbar/Icon.jsx'
 export default function Searchbar() {
   return (
   
-    <div className='Flexbox dirRow searchbar'>  <Search /> <Icon /> <AdvanceSearch /> </div>
+    <div className='Flexbox dirRow searchbar'  id='searchBar'>  <Search /> <Icon /> <AdvanceSearch /> </div>
   
   
     )
