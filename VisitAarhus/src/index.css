@@ -116,9 +116,12 @@ code {
 .searchbar > input {
   background-color: var(--Blue);
   border: none;
+  border-radius: 20px;
   color: var(--Hvid);
+  font-family: 'Montserrat', sans-serif;
   width: 72%;
 }
+
 
 .dirColumn {
   flex-direction: column;
