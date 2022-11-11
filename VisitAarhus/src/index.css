@@ -96,6 +96,10 @@ code {
   flex-wrap: wrap;
 }
 
+.searchbar {
+  background-color: var(--Blue);
+}
+
 .dirRow {
   flex-direction: row;
 }
