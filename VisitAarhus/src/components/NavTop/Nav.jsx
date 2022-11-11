@@ -1,10 +1,13 @@
 import React, { useState, useCallback } from "react";
 import { HamburgerSqueeze } from "react-animated-burgers";
-import calendarsearch from "../../Picture/icons/calendarsearch.png";
-import calendaradd from "../../Picture/icons/calendaradd.png";
-import magicstar from "../../Picture/icons/magicstar.png";
-import sunfog from "../../Picture/icons/sunfog.png";
-import Logo from "../../Picture/logos/visitDKWhite.png";
+import calendarsearch from "../../Picture/icons/menu/calendarsearch.png";
+import calendaradd from "../../Picture/icons/menu/calendaradd.png";
+import magicstar from "../../Picture/icons/menu/magicstar.png";
+import sunfog from "../../Picture/icons/menu/sunfog.png";
+import home from "../../Picture/icons/menu/home.png";
+import arrowright from "../../Picture/icons/menu/arrowright.png";
+import Logo from "../../Picture/logos/VisitDK.png";
+import VisitDKLogo from "../../Picture/logos/visitDKLogo.png";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
@@ -69,6 +72,12 @@ const Nav = () => {
             <li>
               <p>Top things to see</p>
               <img className="menuItemImg" src={sunfog} alt="MenuIcon" />
+            </li>
+            <li>
+              <a href="https://www.visitdenmark.dk/">
+                <p>Go to Visit Denmark</p>
+                <img className="menuItemImg" src={arrowright} alt="MenuIcon" />
+              </a>
             </li>
           </ul>
         </div>

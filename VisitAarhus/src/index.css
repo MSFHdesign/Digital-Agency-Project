@@ -172,19 +172,19 @@ code {
 /* open */
 .bhlgCN {
   border-radius: 0 !important;
-  background-color: var(--Red) !important;
+  background-color: var(--Blue) !important;
   width: 30px !important;
 }
 
 .bhlgCN::before {
   border-radius: 0 !important;
-  background-color: var(--Red) !important;
+  background-color: var(--Blue) !important;
   opacity: 1 !important;
 }
 
 .bhlgCN::after {
   border-radius: 0 !important;
-  background-color: var(--Red) !important;
+  background-color: var(--Blue) !important;
 }
 
 /* menu content */
@@ -197,19 +197,19 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--Blue);
+  background-color: var(--LgBlue);
   z-index: 5;
   transition: height 0.3s ease;
 }
 
 .menu .LogoTop {
   position: absolute;
-  top: 15px;
-  left: 10px;
+  top: 0;
+  left: 0;
 }
 
 .menu-header {
-  color: var(--Hvid);
+  color: var(--Blue);
   text-align: center;
   margin: 10px auto 0;
   font-weight: 800;
@@ -221,7 +221,7 @@ code {
   font-size: 20px;
   text-align: center;
   padding: 10px;
-  color: var(--Hvid);
+  color: var(--Blue);
   border-width: 0;
   background-color: transparent;
   margin: 0 auto;
@@ -239,7 +239,7 @@ option {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: var(--Hvid);
+  color: var(--Blue);
 }
 
 .menuItems li {
@@ -258,7 +258,7 @@ option {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--Hvid);
+  color: var(--Blue);
 }
 
 .menuItems li p {
@@ -309,4 +309,21 @@ option {
 
 .BoxContainer {
   width: 100vw;
+}
+
+.itemContainer {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.itemContainerName {
+  padding-left: 20px;
+  max-width: 40%;
+}
+
+.itemContainerCategory {
+  padding-right: 20px;
 }
