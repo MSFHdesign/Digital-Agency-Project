@@ -12,6 +12,8 @@ import PlaceItem from "./PlaceItem";
 export default function Places()
 {
     const[places, setPlaces] = useState([]);
+    const [Name, setName] = useState([]);
+
 
     useEffect(() => {
 
@@ -27,7 +29,7 @@ export default function Places()
                 var place = data[i];
                if(place.MainCategory.Id === 62)
                {
-                   // console.log(place.Name + ' ' + place.MainCategory.Name);
+                   console.log(place.id);
                     filteredrest.push(place)
                }
             }
@@ -41,11 +43,11 @@ export default function Places()
     }, []);
 
     return(
-    <>
-    <h2>  </h2>
+    <div>
+            <h2> {setName} </h2>
         {
-           places.map(place =>(<PlaceItem place={place} key={place.id} />))
+           places.map(place =>(<PlaceItem place={place} key={place.Name +''+place.Category.Name} />))
         }
-    </>
+    </div>
     )    
 }
