@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Search() {
   return (
-    <input type="search"/>
+    <input type="search" placeholder='Search for anything...'/>
   )
 }
