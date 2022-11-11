@@ -3,6 +3,6 @@ import searchIcon from '../../Picture/icons/search.png';
 
 export default function Icon() {
   return (
-    <img src={searchIcon} alt="Search icon" style={{height: "30px"}}/>
+    <img src={searchIcon} alt="Search icon" style={{height: "25px"}}/>
   )
 }
