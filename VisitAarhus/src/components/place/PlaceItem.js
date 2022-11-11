@@ -11,7 +11,7 @@ export default function PlaceItem({ place }) {
         {" "}
         <img
           src={place.Files.Uri}
-          alt={place.Descriptions[1].DescriptionType}
+          alt={place.Descriptions[0].DescriptionTypeID}
         />
       </div>
       <div className="itemContainerName">{place.Name}</div>
