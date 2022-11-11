@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--Blue);
+    z-index: 1000;
 }
 
 .menuItemImg {
