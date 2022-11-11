@@ -12,9 +12,6 @@ import PlaceItem from "./PlaceItem";
 export default function Places()
 {
     const[places, setPlaces] = useState([]);
-    const [Name, setName] = useState([]);
-
-
     useEffect(() => {
 
         async function getPlaces()
@@ -44,7 +41,7 @@ export default function Places()
 
     return(
     <div>
-            <h2> {setName} </h2>
+            <h2> navn på det  </h2>
         {
            places.map(place =>(<PlaceItem place={place} key={place.Name +''+place.Category.Name} />))
         }
