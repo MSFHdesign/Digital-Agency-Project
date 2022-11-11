@@ -236,3 +236,38 @@ option {
   width: 40px;
   height: 40px;
 }
+
+/* discover food */
+.frameContainer {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerImg {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.insideFrame {
+  width: 90%;
+  height: 220px;
+  position: absolute;
+  z-index: 2;
+  border: solid 6px;
+  border-color: var(--Hvid);
+}
+
+.exsploreTitle {
+  position: absolute;
+  font-size: 36px;
+  z-index: 3;
+  background-color: var(--Hvid);
+  bottom: 0;
+  margin: 0;
+  padding: 5px 20px 0;
+}
