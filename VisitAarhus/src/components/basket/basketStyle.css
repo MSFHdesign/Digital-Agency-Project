@@ -5,8 +5,8 @@
     height: 50px;
     border-radius: 50px;
     position: fixed;
-    bottom: 5%;
-    right: 5%;
+    bottom: 20px;
+    right: 20px;
     padding: 8px;
     display: flex;
     align-items: center;
