@@ -106,7 +106,13 @@ code {
 }
 
 .searchbar > img {
-  padding: 0 10px;
+  padding-left: 20px;
+}
+.searchbar > input {
+  background-color: var(--Blue);
+  border: none;
+  color: var(--Hvid);
+  width: 70%;
 }
 
 .dirColumn {
