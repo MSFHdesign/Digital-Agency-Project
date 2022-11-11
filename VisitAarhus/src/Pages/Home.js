@@ -8,11 +8,22 @@ export default function Home() {
   
 
     <div className='BoxContainer'>
-      {/* <h2>Home</h2> */}
+    
       <div className='frameContainer'>
         <img className='headerImg' src={aarhusNightLife} alt = 'Aarhus dining'/>
         <div className='insideFrame'></div>
-        <h2 className='exsploreTitle'>Restaurants</h2>
+        <h2 className='exsploreTitle'>Home</h2>
+
+
+        {/* beskrivelse */}
+
+        {/* Opret key */}
+
+        {/* Indsæt key */}
+
+        {/* Allerede oprettet */}
+
+        
       </div>
      
     </div>

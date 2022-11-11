@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { storage, db } from "../firebaseConfig";
 import { toast } from "react-toastify";
-
+import { Link } from "react-router-dom";
 // Magnus
 
 export default function AddArticle() {
@@ -62,9 +62,9 @@ export default function AddArticle() {
         value={formData.title}
         onChange={(e) => handleChange(e)}
       />
-      <button className="form-control-btn" onClick={handlePublish}>
+      <Link to='/discover'><button className="form-control-btn" onClick={handlePublish}>
         Publish
-      </button>
+      </button> </Link>
     </div>
   );
 }
