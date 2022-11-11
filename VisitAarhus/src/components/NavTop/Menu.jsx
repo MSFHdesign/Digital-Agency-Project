@@ -4,6 +4,7 @@ import calendaradd from "../../Picture/icons/calendaradd.png";
 import magicstar from "../../Picture/icons/magicstar.png";
 import sunfog from "../../Picture/icons/sunfog.png";
 import Logo from "../../Picture/logos/visitDKWhite.png";
+import VisitDKLogo from "../../Picture/logos/visitDKLogo.png";
 import { Link } from "react-router-dom";
 
 export default function Menu() {
@@ -49,6 +50,10 @@ export default function Menu() {
         <li>
           <p>Top things to see</p>
           <img className="menuItemImg" src={sunfog} alt="MenuIcon" />
+        </li>
+        <li>
+          <p>Go to Visit Denmark</p>
+          <img className="menuItemImg" src={VisitDKLogo} alt="MenuIcon" />
         </li>
       </ul>
     </div>
