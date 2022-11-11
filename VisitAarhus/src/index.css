@@ -269,7 +269,7 @@ option {
 /* discover food */
 .frameContainer {
   width: 100%;
-  height: 260px;
+  height: 259px;
   position: relative;
   display: flex;
   align-items: center;
