@@ -310,3 +310,20 @@ option {
 .BoxContainer {
   width: 100vw;
 }
+
+.itemContainer {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.itemContainerName {
+  padding-left: 20px;
+  max-width: 40%;
+}
+
+.itemContainerCategory {
+  padding-right: 20px;
+}
