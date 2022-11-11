@@ -1,58 +1,60 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
 
-
-/* https://www.visitdenmark.dk/corporate/branding-danmark/typografi?fbclid=IwAR1C1jyKLnco1kCahlxlCSPjZWwz9x-QKE_YTOGR_MfjgBdKhDGFt1KESzQ */ 
+/* https://www.visitdenmark.dk/corporate/branding-danmark/typografi?fbclid=IwAR1C1jyKLnco1kCahlxlCSPjZWwz9x-QKE_YTOGR_MfjgBdKhDGFt1KESzQ */
 
 :root {
-
-  
   /* Farver */
-    --Gray1: rgba(162,169,173,1);
-    --Gray2: rgba(207,210,211,1);
-    --Hvid: #ffff;
-    --Red: rgba(231,0,9,1);
-    --Blue: rgb(2,43,82);
-    --Dkblue: rgba(0,88,122,1);
-    --Dkgreen: rgba(0,117,84,1);
-    --DkYellow: rgba(219,162,0,1);
-    --LgBlue: rgba(195,235,255,1);
-    --LgGreen: rgba(163,234,191,1);
-    --LgYellow: rgba(255,232,130,1);
-    --Bugundy: rgba(154,0,54,1);
-    --Pink: rgba(250,197,204,1);
+  --Gray1: rgba(162, 169, 173, 1);
+  --Gray2: rgba(207, 210, 211, 1);
+  --Hvid: #ffff;
+  --Red: rgba(231, 0, 9, 1);
+  --Blue: rgb(2, 43, 82);
+  --Dkblue: rgba(0, 88, 122, 1);
+  --Dkgreen: rgba(0, 117, 84, 1);
+  --DkYellow: rgba(219, 162, 0, 1);
+  --LgBlue: rgba(195, 235, 255, 1);
+  --LgGreen: rgba(163, 234, 191, 1);
+  --LgYellow: rgba(255, 232, 130, 1);
+  --Bugundy: rgba(154, 0, 54, 1);
+  --Pink: rgba(250, 197, 204, 1);
 
   /* Tekst */
-    --FontColor: #000000;
-    --Fontsize: 12px;
-  
+  --FontColor: #000000;
+  --Fontsize: 12px;
+
   /* Paddinng margin & snizzle */
 
+  --Pad: 1rem;
+  --Mag: 1rem;
 
-    --Pad: 1rem;
-    --Mag: 1rem; 
-  
   /* Frame */
-    --Frame: 2px;
-    --Frameborder: var(--Frame) solid red;
-    --FrameMargin: calc((2 * var(--Frame)));
+  --Frame: 2px;
+  --Frameborder: var(--Frame) solid red;
+  --FrameMargin: calc((2 * var(--Frame)));
 
-  /* BTN */ 
-    --BTNcolor: #f2f2f2;
-    --BTNminWidth: 100px;
-    --BTNminHeight: 33px;
-    --BTNfontsize: 10px; 
+  /* BTN */
+  --BTNcolor: #f2f2f2;
+  --BTNminWidth: 100px;
+  --BTNminHeight: 33px;
+  --BTNfontsize: 10px;
 
   /* Logo */
-    --logoSize: 200px;
-
-
+  --logoSize: 200px;
 }
 
-a:link {text-decoration: none;}
-a:visited {text-decoration: none;}
-a:hover {text-decoration: none;}
-a:active {text-decoration: none;}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
 
 .BTN {
   color: var(--BTNcolor);
@@ -68,28 +70,28 @@ p {
 
 h2 {
   line-height: 52px;
-  font-size: calc(2* var(--Fontsize));
+  font-size: calc(2 * var(--Fontsize));
 }
 
-h3{
-font-size: calc((1.5 * var(--Fontsize)));
+h3 {
+  font-size: calc((1.5 * var(--Fontsize)));
 }
 
-h4{
-  text-decoration: solid; 
+h4 {
+  text-decoration: solid;
   font-size: calc((1.25 * var(--Fontsize)));
 }
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  
+  font-family: "Montserrat", sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 /* FLEXBOX */
@@ -117,8 +119,13 @@ code {
   background-color: var(--Blue);
   border: none;
   color: var(--Hvid);
+  font-family: 'Montserrat', sans-serif;
   width: 72%;
 }
+*:focus {
+  outline: 0;
+}
+
 
 .dirColumn {
   flex-direction: column;
@@ -130,7 +137,6 @@ code {
   min-height: 100vh;
   margin: var(--Mag);
 }
-
 
 .LogoTop {
   width: 200px;
@@ -224,7 +230,6 @@ code {
 option {
   font-size: 14px;
   color: var(--FontColor);
-  
 }
 
 .menuItems {

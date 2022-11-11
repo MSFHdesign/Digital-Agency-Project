@@ -27,7 +27,7 @@ export default function Menu() {
 
       <ul className="menuItems">
         <li>
-          <Link to="/seetrip">
+          <Link to="./seetrip">
             <p>See your trip</p>
             <img
               className="menuItemImg"
