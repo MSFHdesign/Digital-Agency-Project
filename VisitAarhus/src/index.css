@@ -121,7 +121,7 @@ code {
   color: var(--Hvid);
   width: 72%;
 }
-.searchbar > input:focus {
+*:focus {
   outline: 0;
 }
 
