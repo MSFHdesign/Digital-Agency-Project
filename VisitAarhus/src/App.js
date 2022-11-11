@@ -18,10 +18,16 @@ import Menu from './components/NavTop/Menu'
 function App() {
   return (
         <div className="App">
+<<<<<<< Updated upstream
           <div className='HeaderTop Flexbox dirRow'>
+=======
+          <div className='Fixedbar'><div className='HeaderTop Flexbox dirRow'>
+        
+>>>>>>> Stashed changes
             <LogoTop/> <Nav/> 
           </div>
             <Searchbar />
+            </div>
             <Routes> 
               <Route path='/' element={<Home/>}/>
               <Route path='/discover' element={<Discover/>}/>
