@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import pilNed from '../../Picture/icons/PilNed.png';
 
 export default function advanceSearch() {
   return (
-    <div> advanceSearch </div>
+    <img src={pilNed} alt="Advanced search" style={{height: "30px"}}/>
   )
 }

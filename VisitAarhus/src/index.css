@@ -90,15 +90,23 @@ code {
 /* FLEXBOX */
 
 .Flexbox {
-  padding-top: var(--Pad);
-  justify-content: space-around;
+  /* padding-top: var(--Pad); */
+  justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
-
 }
-
 .dirRow {
   flex-direction: row;
+}
+.searchbar {
+  background-color: var(--Blue);
+  width: 100%;
+  padding: var(--Pad);
+  justify-content: flex-end;
+}
+
+.searchbar > img {
+  padding: 0 10px;
 }
 
 .dirColumn {
