@@ -13,7 +13,6 @@ import SeeTrip from './Pages/seeTrip'
 import LogoTop from './components/LogoTop/LogoTop' 
 import Nav from './components/NavTop/Nav'
 import Searchbar from './components/NavTop/Searchbar.jsx'
-import Menu from './components/NavTop/Menu'
 import Basket from './components/basket/basket'
 
 function App() {
@@ -31,7 +30,6 @@ function App() {
               <Route path='/discover' element={<Discover/>}/>
               <Route path='/Personalspace' element={<Personalpage/>}/>
               <Route path='/*' element={<Fejl/>}/>
-              <Route path='/menu' element={<Menu/>}/>
               <Route path='/delete' element ={<DeleteTrip />} />
               <Route path='/plan' element ={<PlanTrip />} />
               <Route path='/seetrip' elements ={<SeeTrip />} />

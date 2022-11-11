@@ -271,6 +271,11 @@ option {
   height: 40px;
 }
 
+.menuItems #VisitDKHeart {
+  height: 35px;
+  width: auto;
+}
+
 /* discover food */
 .frameContainer {
   width: 100%;
