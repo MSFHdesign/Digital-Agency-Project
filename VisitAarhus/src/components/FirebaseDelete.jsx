@@ -16,7 +16,7 @@ export default function DeleteArticle({ id, imageUrl }) {
   };
   const handleDelete = async () => {
     try {
-      await deleteDoc(doc(db, "Calenders", formData));
+      await deleteDoc(doc(db, formData, "YHrShMWGHIusdnZ7QFbT"));
       setFormData("");
       toast("article deleted successfully", { type: "success" });
       const storageRef = ref(storage, imageUrl);
