@@ -12,7 +12,6 @@ import PlaceItem from "./PlaceItem";
 export default function Places()
 {
     const[places, setPlaces] = useState([]);
-
     useEffect(() => {
 
         async function getPlaces()
@@ -27,7 +26,7 @@ export default function Places()
                 var place = data[i];
                if(place.MainCategory.Id === 62)
                {
-                   // console.log(place.Name + ' ' + place.MainCategory.Name);
+                   console.log(place.id);
                     filteredrest.push(place)
                }
             }
@@ -41,11 +40,11 @@ export default function Places()
     }, []);
 
     return(
-    <>
-    <h2>  </h2>
+    <div>
+            <h2> navn på det  </h2>
         {
-           places.map(place =>(<PlaceItem place={place} key={place.id} />))
+           places.map(place =>(<PlaceItem place={place} key={place.Name +''+place.Category.Name} />))
         }
-    </>
+    </div>
     )    
 }
