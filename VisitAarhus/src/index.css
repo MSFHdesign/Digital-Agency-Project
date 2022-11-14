@@ -329,7 +329,6 @@ option {
 }
 
 .SearchBarContainer {
-  background-color: aliceblue;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
