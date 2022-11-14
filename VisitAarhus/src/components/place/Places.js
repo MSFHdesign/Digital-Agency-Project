@@ -71,7 +71,7 @@ export default function Places() {
   
   return (
     <div>
-      <h2 className="categoryText">Choose somewhere to eat</h2>
+    
       <div className="frameContainer">
         <img className="headerImg" src={hero[filter].ImageUrl} alt="Aarhus dining" />
         <div className="insideFrame"></div>

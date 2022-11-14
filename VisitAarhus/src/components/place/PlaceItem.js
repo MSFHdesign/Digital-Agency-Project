@@ -19,28 +19,24 @@ export default function PlaceItem({ place }) {
   }
 
   const text = description;
-  const subText = text.substr(0, 150);
+  const subText = text.substr(0, 100).concat("...");
   const [showMore, setShowMore] = useState(false);
   console.log(text);
 
   return (
     <div className="categoryItems">
-      {/* <div className="itemContainer" style={{ display: "flex" }}> */}
       <div className="itemContainerName">{place.Name}</div>
       <div className="itemContainerImg">
         <img src={image} alt={place.Name} />
       </div>
-      {/* <p className="itemDescription">{description}</p> */}
-      <p>
+      <p className="itemDescription">
         {showMore ? description : subText}
         <button className="showMorebtn" onClick={() => setShowMore(!showMore)}>
           {showMore ? "Show less" : "Show more"}
         </button>
       </p>
-      {/* <Text></Text> */}
       <div className="itemContainerCategory">{place.Category.Name}</div>
       <button className="itemAdd">Add</button>
-      {/* </div> */}
     </div>
   );
 }
