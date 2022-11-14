@@ -345,3 +345,6 @@ option {
 .itemContainerImg img {
   width: 100%;
 }
+
+
+.HeaderTop {position: static}
