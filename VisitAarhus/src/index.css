@@ -336,6 +336,13 @@ option {
   flex-direction: column;
 }
 
+.categoryTop {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .itemContainerName {
   width: 90%;
   margin: 0 auto 10px;
@@ -344,9 +351,7 @@ option {
 }
 
 .itemContainerCategory {
-  width: 90%;
-  margin: 0 auto;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .itemContainerImg {
@@ -363,9 +368,30 @@ option {
   margin: 0 auto;
 }
 
-.itemAdd {
-  width: 130px;
-  margin: 0 auto;
+.DescriptionBtn {
+  background-color: transparent;
+  border-width: 0;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  font-size: 36px;
+}
+
+.itemAdd {
+  padding: 10px 30px;
+  width: 130px;
+  background-color: var(--LgBlue);
+  border-radius: 50px;
+  border-width: 0;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 0;
+  font-size: 20px;
+}
+
+.borderBottom {
+  margin: 20px auto 0;
+  width: 90%;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--Gray2);
 }

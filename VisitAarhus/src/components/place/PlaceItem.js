@@ -3,7 +3,8 @@
  *Simple Component Function to stype and return a place to eat
  *
  */
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 export default function PlaceItem({ place }) {
 
@@ -28,17 +29,20 @@ export default function PlaceItem({ place }) {
 
   return (
     <div className="categoryItems">
+      <div className="categoryTop">
         <div className="itemContainerName">{place.Name}</div>
-        <div className="itemContainerImg">
-          <img src={image} alt={place.Name} />
-        </div>
-        <p className="itemDescription">
-          {showMore ? description : subText}
-            <button className="showMorebtn" onClick={() => setShowMore(!showMore)}>
-          {showMore ? "Show less" : "Show more"}</button>
-        </p>
         <div className="itemContainerCategory">{place.Category.Name}</div>
-        <button className="itemAdd">Add</button>
+      </div>
+      <div className="itemContainerImg">
+        <img src={image} alt={place.Name} />
+      </div>
+      <p className="itemDescription">
+        {showMore ? description : subText}
+          <button className="DescriptionBtn" onClick={() => setShowMore(!showMore)}>
+        {showMore ? <IoIosArrowUp/> : <IoIosArrowDown/>}</button>
+      </p>
+      <button className="itemAdd">Add</button>
+      <div className="borderBottom"></div>
     </div>
   );
 }
