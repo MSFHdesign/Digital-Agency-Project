@@ -22,15 +22,15 @@ const hero = {
   
   48: { Name: 'Sightseeing', ImageUrl: 'https://files.guidedanmark.org/files/466/214602_vdktype-4.jpg' },
   
-  40: { Name: 'Theatres/Cinemas', ImageUrl: 'https://files.guidedanmark.org/files/466/219170_VDKType-biografer.jpg' },
+  40: { Name: 'Entertainment', ImageUrl: 'https://files.guidedanmark.org/files/466/219170_VDKType-biografer.jpg' },
   
   52: { Name: 'DIY Tours', ImageUrl: 'https://files.guidedanmark.org/files/466/219166_VDKType-turforslag.jpg' },
   
-  42: { Name: 'Angeling', ImageUrl: 'https://files.guidedanmark.org/files/466/219168_VDKType-fiskevande.jpg' },
+  42: { Name: 'Angling', ImageUrl: 'https://files.guidedanmark.org/files/466/219168_VDKType-fiskevande.jpg' },
   
   53: { Name: 'Wellness', ImageUrl: 'https://files.guidedanmark.org/files/466/214607_vdktype-13.jpg' },
   
-  37: { Name: 'Sport and Activities', ImageUrl: 'https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg' },
+  37: { Name: 'Activities', ImageUrl: 'https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg' },
   
   'xx': { Name: '', ImageUrl: '' },
   
@@ -94,7 +94,7 @@ export default function Places() {
         Sightseeing
       </button>
       <button className="SearchBarBTN" onClick={() => setFilter(40)}>
-        Cinemas
+        Entertainment
       </button>
       <button className="SearchBarBTN" onClick={() => setFilter(52)}>
         DIY tours
