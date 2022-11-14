@@ -11,10 +11,9 @@ export default function planTrip() {
         <h2 className="exsploreTitle">Home</h2>
       </div>
 
-      <h1>Create new calender</h1>
+      <h1>Plan new trip</h1>
       <p>
-        Here you can create a new calender for your trip! Just give it a name
-        and discover the many options!
+        Plan your next trip! Just come up with a name, and start adding attractions to your plan. Go explore!
       </p>
       <AddArticle />
     </div>

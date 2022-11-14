@@ -82,16 +82,16 @@ export default function Places() {
         Beaches
       </button>
       <button className="SearchBarBTN" onClick={() => setFilter(64)}>
-        Café
+        Cafés
       </button>
       <button className="SearchBarBTN" onClick={() => setFilter(47)}>
         Shopping
       </button>
       <button className="SearchBarBTN" onClick={() => setFilter(63)}>
-        Resturants
+        Restaurants
       </button>
       <button className="SearchBarBTN" onClick={() => setFilter(48)}>
-        Sightseen
+        Sightseeing
       </button>
       <button className="SearchBarBTN" onClick={() => setFilter(40)}>
         Cinemas
@@ -106,7 +106,7 @@ export default function Places() {
         Wellness
       </button>
       <button className="SearchBarBTN" onClick={() => setFilter(37)}>
-        Sport and Activities
+        Activities
       </button>
 
       {places.map((place) => (
