@@ -8,68 +8,36 @@
 
 import React, { useEffect, useState } from "react";
 import PlaceItem from "./PlaceItem";
-import aarhusNightLife from "../../Picture/img/salling.jpg";
 
-const hero = [
-  {
-    Id: 63,
-    Name: "Restaurants",
-    ImageUrl:
-      "https://files.guidedanmark.org/files/407/218969_VDKType-Restaurants.jpg",
-  },
-  {
-    Id: 64,
-    Name: "Cafés",
-    ImageUrl:
-      "https://files.guidedanmark.org/files/407/218968_VDKType-Cafes.jpg",
-  },
-  {
-    Id: 49,
-    Name: "Beaches and lidos",
-    ImageUrl:
-      "https://files.guidedanmark.org/files/466/219163_VDKType-strande.jpg",
-  },
-  {
-    Id: 47,
-    Name: "Shopping",
-    ImageUrl:
-      "https://files.guidedanmark.org/files/466/219160_VDKType-shopping.jpg",
-  },
-  {
-    Id: 48,
-    Name: "Sightseeing",
-    ImageUrl: "https://files.guidedanmark.org/files/466/214602_vdktype-4.jpg",
-  },
-  {
-    Id: 40,
-    Name: "Theatres/Cinemas",
-    ImageUrl:
-      "https://files.guidedanmark.org/files/466/219170_VDKType-biografer.jpg",
-  },
-  {
-    Id: 52,
-    Name: "DIY Tours",
-    ImageUrl:
-      "https://files.guidedanmark.org/files/466/219166_VDKType-turforslag.jpg",
-  },
-  {
-    Id: 42,
-    Name: "Angling",
-    ImageUrl:
-      "https://files.guidedanmark.org/files/466/219168_VDKType-fiskevande.jpg",
-  },
-  {
-    Id: 53,
-    Name: "Wellness",
-    ImageUrl: "https://files.guidedanmark.org/files/466/214607_vdktype-13.jpg",
-  },
-  {
-    Id: 37,
-    Name: "Sport and Activities",
-    ImageUrl:
-      "https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg",
-  },
-];
+
+
+const hero = {
+  63: { Name: 'Restaurants', ImageUrl: 'https://files.guidedanmark.org/files/407/218969_VDKType-Restaurants.jpg' },
+
+  64: { Name: 'Cafés', ImageUrl: 'https://files.guidedanmark.org/files/407/218968_VDKType-Cafes.jpg' },
+
+  49: { Name: 'Beaches and lidos', ImageUrl: 'https://files.guidedanmark.org/files/466/219163_VDKType-strande.jpg' },
+  
+  47: { Name: 'Shopping', ImageUrl: 'https://files.guidedanmark.org/files/466/219160_VDKType-shopping.jpg' },
+  
+  48: { Name: 'Sightseeing', ImageUrl: 'https://files.guidedanmark.org/files/466/214602_vdktype-4.jpg' },
+  
+  40: { Name: 'Theatres/Cinemas', ImageUrl: 'https://files.guidedanmark.org/files/466/219170_VDKType-biografer.jpg' },
+  
+  52: { Name: 'DIY Tours', ImageUrl: 'https://files.guidedanmark.org/files/466/219166_VDKType-turforslag.jpg' },
+  
+  42: { Name: 'Angeling', ImageUrl: 'https://files.guidedanmark.org/files/466/219168_VDKType-fiskevande.jpg' },
+  
+  53: { Name: 'Wellness', ImageUrl: 'https://files.guidedanmark.org/files/466/214607_vdktype-13.jpg' },
+  
+  37: { Name: 'port and Activities', ImageUrl: 'https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg' },
+  
+  'xx': { Name: '', ImageUrl: '' },
+  
+  'xy': { Name: '', ImageUrl: '' },
+  
+  'yy': { Name: '', ImageUrl: '' },
+};
 
 export default function Places() {
   const [places, setPlaces] = useState([]);
@@ -100,36 +68,13 @@ export default function Places() {
     getPlaces();
   }, [filter]);
 
-  useEffect(() => {
-    async function getPlaces() {
-      const url =
-        "https://raw.githubusercontent.com/manypossibles/designops/master/assets/data/en/data.json";
-      const response = await fetch(url);
-      const data = await response.json();
-      const filteredrest = [];
-
-      try {
-        for (var i = 0; i < data.length; i++) {
-          var place = data[i];
-          if (place.Category.Id === filter) {
-            console.log(place.Category.Name);
-            filteredrest.push(place);
-          }
-        }
-      } catch (error) {
-        console.log("Oh come on! These should be easy peeps! What");
-      }
-      setPlaces(filteredrest);
-    }
-    getPlaces();
-  }, [filter]);
-
+  
   return (
     <div>
       <div className="frameContainer">
-        <img className="headerImg" src={aarhusNightLife} alt="Aarhus dining" />
+        <img className="headerImg" src={hero[filter].ImageUrl} alt="Aarhus dining" />
         <div className="insideFrame"></div>
-        <h2 className="exsploreTitle">Discover</h2>
+        <h2 className="exsploreTitle">{[filter].hero}</h2>
       </div>
 
       <button className="SearchBarBTN" onClick={() => setFilter(49)}>
