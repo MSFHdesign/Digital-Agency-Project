@@ -30,7 +30,7 @@ const hero = {
   
   53: { Name: 'Wellness', ImageUrl: 'https://files.guidedanmark.org/files/466/214607_vdktype-13.jpg' },
   
-  37: { Name: 'port and Activities', ImageUrl: 'https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg' },
+  37: { Name: 'Sport and Activities', ImageUrl: 'https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg' },
   
   'xx': { Name: '', ImageUrl: '' },
   
@@ -74,7 +74,7 @@ export default function Places() {
       <div className="frameContainer">
         <img className="headerImg" src={hero[filter].ImageUrl} alt="Aarhus dining" />
         <div className="insideFrame"></div>
-        <h2 className="exsploreTitle">{[filter].hero}</h2>
+        <h2 className="exsploreTitle">{hero[filter].Name}</h2>
       </div>
 
       <button className="SearchBarBTN" onClick={() => setFilter(49)}>
