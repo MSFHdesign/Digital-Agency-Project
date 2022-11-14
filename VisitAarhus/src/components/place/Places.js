@@ -36,7 +36,7 @@ export default function Places() {
       setPlaces(filteredrest);
     }
     getPlaces();
-  }, []);
+  }, [filter]);
 
   return (
     <div>
