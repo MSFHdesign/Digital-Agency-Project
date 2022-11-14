@@ -21,8 +21,8 @@ export default function PlaceItem({ place }) {
     description = place.Descriptions[0].Text;
   }
 
-  const text = `{description}`;
-  const subText = text.substr(1,250);
+  const text = description;
+  const subText = text.substr(0,150);
   const [showMore, setShowMore] = useState(false);
   console.log(text)
   
