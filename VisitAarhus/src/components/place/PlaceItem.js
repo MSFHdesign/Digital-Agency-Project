@@ -11,12 +11,14 @@ export default function PlaceItem({ place }) {
     image = place.Files[0].Uri;
   }
   return (
-    <div className="itemContainer" style={{ display: "flex" }}>
+    <div>
       <div className="itemContainerImg">
         <img src={image} alt={place.Name} />
       </div>
-      <div className="itemContainerName">{place.Name}</div>
-      <div className="itemContainerCategory">{place.Category.Name}</div>
+      <div className="itemContainer" style={{ display: "flex" }}>
+        <div className="itemContainerName">{place.Name}</div>
+        <div className="itemContainerCategory">{place.Category.Name}</div>
+      </div>
     </div>
   );
 }
