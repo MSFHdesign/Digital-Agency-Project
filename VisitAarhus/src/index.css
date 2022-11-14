@@ -367,7 +367,7 @@ option {
   justify-content: center;
   margin: 0 auto;
   font-size: 36px;
-  rotate: -90deg;
+  transform: rotate(0.75turn);
 }
 
 .itemAdd {
