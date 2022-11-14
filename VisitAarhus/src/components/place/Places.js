@@ -15,7 +15,7 @@ const hero = {
 
   64: { Name: 'Cafés', ImageUrl: 'https://files.guidedanmark.org/files/407/218968_VDKType-Cafes.jpg' },
 
-  49: { Name: 'Beaches and lidos', ImageUrl: 'https://files.guidedanmark.org/files/466/219163_VDKType-strande.jpg' },
+  49: { Name: 'Beaches', ImageUrl: 'https://files.guidedanmark.org/files/466/219163_VDKType-strande.jpg' },
   
   47: { Name: 'Shopping', ImageUrl: 'https://files.guidedanmark.org/files/466/219160_VDKType-shopping.jpg' },
   

@@ -17,7 +17,11 @@ export default function PlaceItem({ place }) {
     description = place.Descriptions[0].Text;
   }
 
-  const text = description;
+  
+  let text = description
+  if (description === null) {
+    text = ''
+    };
   const subText = text.substr(0, 100).concat("...");
   const [showMore, setShowMore] = useState(false);
   console.log(text);
