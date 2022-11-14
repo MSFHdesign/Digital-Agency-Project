@@ -361,12 +361,6 @@ option {
   font-size: 18px;
   width: 90%;
   margin: 0 auto;
-  height: 100px;
-  overflow-y: hidden;
-  text-overflow: ellipsis;
-  /* overflow-wrap: break-word; */
-  /* overflow:hidden;  */
-  /* white-space:nowrap;  */
 }
 
 .itemAdd {
