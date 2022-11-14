@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+//import React, { useState } from 'react'
 import Draggable from 'react-draggable';
 import './basketStyle.css'
 import calendar from '../../Picture/icons/calendar.png';
@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 export default function basket() {
- const [tripN, setTripN] = useState([]);
+// const [tripN, setTripN] = useState([]);
   
   return (
     <Draggable bounds="parent">
