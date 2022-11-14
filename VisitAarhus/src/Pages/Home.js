@@ -2,6 +2,11 @@ import aarhusNightLife from '../Picture/img/aarhus-nightlife.jpg'
 
 import React from 'react'
 
+// Components 
+
+import AddArticle from '../components/firebase tilfoej copy'
+import ReadyKey from '../components/ReadyKey.jsx'
+
 
 export default function Home() {
   return (
@@ -13,18 +18,25 @@ export default function Home() {
         <img className='headerImg' src={aarhusNightLife} alt = 'Aarhus dining'/>
         <div className='insideFrame'></div>
         <h2 className='exsploreTitle'>Home</h2>
+     </div>
+
+     
 
 
-        {/* beskrivelse */}
+      {/* beskrivelse */}
+      
+      <AddArticle />
+      {/* her skal der vææære noget der beskriver det med at få en nøgle */}
+        
+         
+      
 
-        {/* Opret key */}
+        {/* Allerede oprettet tekst  */}
 
-        {/* Indsæt key */}
-
-        {/* Allerede oprettet */}
+      <ReadyKey />
 
         
-      </div>
+     
      
     </div>
  
