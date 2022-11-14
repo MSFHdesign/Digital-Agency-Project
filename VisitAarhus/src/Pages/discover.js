@@ -8,7 +8,7 @@ export default function discover() {
       <div className='frameContainer'>
         <img className='headerImg' src={aarhusNightLife} alt = 'Aarhus dining'/>
         <div className='insideFrame'></div>
-        <h2 className='exsploreTitle'>Discover</h2>
+        <h2 className='exsploreTitle'>Restaurants</h2>
         </div>
 
 {/* JSON FILER DISPLAYED */}

@@ -37,7 +37,7 @@ export default function Places() {
 
   return (
     <div>
-      <h2> navn på det </h2>
+      <h2 className="categoryText">Choose somewhere to eat</h2>
       {places.map((place) => (
         <PlaceItem place={place} key={place.Name + "" + place.Category.Name} />
       ))}
