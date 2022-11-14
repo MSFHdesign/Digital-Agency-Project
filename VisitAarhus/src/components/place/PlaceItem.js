@@ -36,7 +36,7 @@ export default function PlaceItem({ place }) {
           <button className="DescriptionBtn" onClick={() => setShowMore(!showMore)}>
         {showMore ? ">" : "<"}</button>
       </p>
-      <button className="itemAdd">Add</button>
+      <button className="itemAdd">Add to trip</button>
       <div className="borderBottom"></div>
     </div>
   );
