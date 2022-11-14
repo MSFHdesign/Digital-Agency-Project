@@ -6,8 +6,9 @@
  *Author Jeffrey Serio
  */
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import PlaceItem from "./PlaceItem";
+import pilNed from "../../Picture/icons/menu/arrowdown.png";
 
 const hero = {
   63: {
@@ -23,7 +24,7 @@ const hero = {
   },
 
   49: {
-    Name: "Beaches and lidos",
+    Name: "Beaches",
     ImageUrl:
       "https://files.guidedanmark.org/files/466/219163_VDKType-strande.jpg",
   },
@@ -68,13 +69,11 @@ const hero = {
       "https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg",
   },
 
-  0: {
-    Name: "discover",
-    ImageUrl:
-      "https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg",
-  },
+  xx: { Name: "", ImageUrl: "" },
 
   xy: { Name: "", ImageUrl: "" },
+
+  yy: { Name: "", ImageUrl: "" },
 };
 
 export default function Places() {
@@ -107,6 +106,18 @@ export default function Places() {
     getPlaces();
   }, [filter]);
 
+  // show filter options
+  const [isShown, setIsShown] = useState(false);
+
+  const showOptions = useCallback(
+    () => setIsShown((prevState) => !prevState),
+    []
+  );
+
+  const handleClick = (event) => {
+    setIsShown((current) => !current);
+  };
+
   return (
     <div>
       <div className="frameContainer">
@@ -119,36 +130,48 @@ export default function Places() {
         <h2 className="exsploreTitle">{hero[filter].Name}</h2>
       </div>
 
-      <button className="SearchBarBTN" onClick={() => setFilter(49)}>
-        Beaches
+      <button
+        className="SearchBarExpandBtn"
+        {...{ isShown, showOptions }}
+        onClick={handleClick}
+      >
+        Filters{" "}
+        <img src={pilNed} alt="Advanced search" style={{ height: "25px" }} />
       </button>
-      <button className="SearchBarBTN" onClick={() => setFilter(64)}>
-        Cafés
-      </button>
-      <button className="SearchBarBTN" onClick={() => setFilter(47)}>
-        Shopping
-      </button>
-      <button className="SearchBarBTN" onClick={() => setFilter(63)}>
-        Restaurants
-      </button>
-      <button className="SearchBarBTN" onClick={() => setFilter(48)}>
-        Sightseeing
-      </button>
-      <button className="SearchBarBTN" onClick={() => setFilter(40)}>
-        Entertainment
-      </button>
-      <button className="SearchBarBTN" onClick={() => setFilter(52)}>
-        DIY tours
-      </button>
-      <button className="SearchBarBTN" onClick={() => setFilter(42)}>
-        Angling
-      </button>
-      <button className="SearchBarBTN" onClick={() => setFilter(53)}>
-        Wellness
-      </button>
-      <button className="SearchBarBTN" onClick={() => setFilter(37)}>
-        Activities
-      </button>
+      {isShown && (
+        <div className="SearchBarContainer">
+          <button className="SearchBarBTN" onClick={() => setFilter(49)}>
+            Beaches
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(64)}>
+            Cafés
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(47)}>
+            Shopping
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(63)}>
+            Restaurants
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(48)}>
+            Sightseeing
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(40)}>
+            Entertainment
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(52)}>
+            DIY tours
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(42)}>
+            Angling
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(53)}>
+            Wellness
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(37)}>
+            Activities
+          </button>
+        </div>
+      )}
 
       {places.map((place) => (
         <PlaceItem place={place} key={place.Name + "" + place.Category.Name} />
