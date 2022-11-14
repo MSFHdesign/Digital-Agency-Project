@@ -53,8 +53,7 @@ export default function AddArticle() {
   };
   return (
     <div className="form">
-      <h2>Add a post</h2>
-      <label htmlFor="">Title</label>
+      <h2>Create calender</h2>
       <input
         type="text"
         name="title"
@@ -62,9 +61,11 @@ export default function AddArticle() {
         value={formData.title}
         onChange={(e) => handleChange(e)}
       />
-      <Link to='/discover'><button className="form-control-btn" onClick={handlePublish}>
-        Publish
-      </button> </Link>
+      <Link to="/discover">
+        <button className="form-control-btn" onClick={handlePublish}>
+          Create!
+        </button>{" "}
+      </Link>
     </div>
   );
 }
