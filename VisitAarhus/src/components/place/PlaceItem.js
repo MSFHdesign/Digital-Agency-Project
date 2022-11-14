@@ -5,13 +5,14 @@
  */
 
 export default function PlaceItem({ place }) {
+  
   return (
     <div className="itemContainer" style={{ display: "flex" }}>
       <div className="itemContainerImg">
         {" "}
         <img
-          src={place.Files.Uri}
-          alt={place.Descriptions[0].DescriptionTypeID}
+          src={place.Uri}
+          alt={place.Uri}
         />
       </div>
       <div className="itemContainerName">{place.Name}</div>

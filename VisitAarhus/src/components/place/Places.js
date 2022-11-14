@@ -10,6 +10,7 @@ import React, { useEffect, useState } from 'react'
 import PlaceItem from "./PlaceItem";
 
 export default function Places()
+
 {
     const[places, setPlaces] = useState([]);
     useEffect(() => {
