@@ -8,39 +8,81 @@
 
 import React, { useEffect, useState, useCallback } from "react";
 import PlaceItem from "./PlaceItem";
-import pilNed from '../../Picture/icons/menu/arrowdown.png';
+import pilNed from "../../Picture/icons/menu/arrowdown.png";
 
 const hero = {
-  63: { Name: 'Restaurants', ImageUrl: 'https://files.guidedanmark.org/files/407/218969_VDKType-Restaurants.jpg' },
+  63: {
+    Name: "Restaurants",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/407/218969_VDKType-Restaurants.jpg",
+  },
 
-  64: { Name: 'Cafés', ImageUrl: 'https://files.guidedanmark.org/files/407/218968_VDKType-Cafes.jpg' },
+  64: {
+    Name: "Cafés",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/407/218968_VDKType-Cafes.jpg",
+  },
 
-  49: { Name: 'Beaches', ImageUrl: 'https://files.guidedanmark.org/files/466/219163_VDKType-strande.jpg' },
-  
-  47: { Name: 'Shopping', ImageUrl: 'https://files.guidedanmark.org/files/466/219160_VDKType-shopping.jpg' },
-  
-  48: { Name: 'Sightseeing', ImageUrl: 'https://files.guidedanmark.org/files/466/214602_vdktype-4.jpg' },
-  
-  40: { Name: 'Entertainment', ImageUrl: 'https://files.guidedanmark.org/files/466/219170_VDKType-biografer.jpg' },
-  
-  52: { Name: 'DIY Tours', ImageUrl: 'https://files.guidedanmark.org/files/466/219166_VDKType-turforslag.jpg' },
-  
-  42: { Name: 'Angling', ImageUrl: 'https://files.guidedanmark.org/files/466/219168_VDKType-fiskevande.jpg' },
-  
-  53: { Name: 'Wellness', ImageUrl: 'https://files.guidedanmark.org/files/466/214607_vdktype-13.jpg' },
-  
-  37: { Name: 'Activities', ImageUrl: 'https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg' },
-  
-  'xx': { Name: '', ImageUrl: '' },
-  
-  'xy': { Name: '', ImageUrl: '' },
-  
-  'yy': { Name: '', ImageUrl: '' },
+  49: {
+    Name: "Beaches",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219163_VDKType-strande.jpg",
+  },
+
+  47: {
+    Name: "Shopping",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219160_VDKType-shopping.jpg",
+  },
+
+  48: {
+    Name: "Sightseeing",
+    ImageUrl: "https://files.guidedanmark.org/files/466/214602_vdktype-4.jpg",
+  },
+
+  40: {
+    Name: "Entertainment",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219170_VDKType-biografer.jpg",
+  },
+
+  52: {
+    Name: "DIY Tours",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219166_VDKType-turforslag.jpg",
+  },
+
+  42: {
+    Name: "Angling",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219168_VDKType-fiskevande.jpg",
+  },
+
+  53: {
+    Name: "Wellness",
+    ImageUrl: "https://files.guidedanmark.org/files/466/214607_vdktype-13.jpg",
+  },
+
+  37: {
+    Name: "Activities",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg",
+  },
+
+  0: {
+    Name: "Discover",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg",
+  },
+
+  xy: { Name: "", ImageUrl: "" },
+
+  yy: { Name: "", ImageUrl: "" },
 };
 
 export default function Places() {
   const [places, setPlaces] = useState([]);
-  const [filter, setFilter] = useState(64);
+  const [filter, setFilter] = useState(0);
   console.log(filter);
 
   useEffect(() => {
@@ -55,7 +97,8 @@ export default function Places() {
         for (var i = 0; i < data.length; i++) {
           var place = data[i];
           if (place.Category.Id === filter) {
-            console.log(place.Category.Name);
+            filteredrest.push(place);
+          } else {
             filteredrest.push(place);
           }
         }
@@ -78,51 +121,60 @@ export default function Places() {
   const handleClick = (event) => {
     setIsShown((current) => !current);
   };
-  
+
   return (
     <div>
-    
       <div className="frameContainer">
-        <img className="headerImg" src={hero[filter].ImageUrl} alt="Aarhus dining" />
+        <img
+          className="headerImg"
+          src={hero[filter].ImageUrl}
+          alt="Aarhus dining"
+        />
         <div className="insideFrame"></div>
         <h2 className="exsploreTitle">{hero[filter].Name}</h2>
       </div>
-      
-      <button className="SearchBarExpandBtn" {...{ isShown, showOptions }}
-        onClick={handleClick}>Filters <img src={pilNed} alt="Advanced search" style={{height: "25px"}}/></button>
+
+      <button
+        className="SearchBarExpandBtn"
+        {...{ isShown, showOptions }}
+        onClick={handleClick}
+      >
+        Filters{" "}
+        <img src={pilNed} alt="Advanced search" style={{ height: "25px" }} />
+      </button>
       {isShown && (
-      <div className="SearchBarContainer">
-        <button className="SearchBarBTN" onClick={() => setFilter(49)}>
-          Beaches
-        </button>
-        <button className="SearchBarBTN" onClick={() => setFilter(64)}>
-          Cafés
-        </button>
-        <button className="SearchBarBTN" onClick={() => setFilter(47)}>
-          Shopping
-        </button>
-        <button className="SearchBarBTN" onClick={() => setFilter(63)}>
-          Restaurants
-        </button>
-        <button className="SearchBarBTN" onClick={() => setFilter(48)}>
-          Sightseeing
-        </button>
-        <button className="SearchBarBTN" onClick={() => setFilter(40)}>
-          Entertainment
-        </button>
-        <button className="SearchBarBTN" onClick={() => setFilter(52)}>
-          DIY tours
-        </button>
-        <button className="SearchBarBTN" onClick={() => setFilter(42)}>
-          Angling
-        </button>
-        <button className="SearchBarBTN" onClick={() => setFilter(53)}>
-          Wellness
-        </button>
-        <button className="SearchBarBTN" onClick={() => setFilter(37)}>
-          Activities
-        </button>
-      </div>
+        <div className="SearchBarContainer">
+          <button className="SearchBarBTN" onClick={() => setFilter(49)}>
+            Beaches
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(64)}>
+            Cafés
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(47)}>
+            Shopping
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(63)}>
+            Restaurants
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(48)}>
+            Sightseeing
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(40)}>
+            Entertainment
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(52)}>
+            DIY tours
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(42)}>
+            Angling
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(53)}>
+            Wellness
+          </button>
+          <button className="SearchBarBTN" onClick={() => setFilter(37)}>
+            Activities
+          </button>
+        </div>
       )}
 
       {places.map((place) => (
