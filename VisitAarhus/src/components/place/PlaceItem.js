@@ -36,7 +36,7 @@ export default function PlaceItem({ place }) {
         </div>
         {/* <p className="itemDescription">{description}</p> */}
         <p>
-          {showMore ? description : subText}
+          {showMore ? description : subText + '...'} <br/>
             <button className="showMorebtn" onClick={() => setShowMore(!showMore)}>
           {showMore ? "Show less" : "Show more"}</button>
         </p>
