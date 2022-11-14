@@ -338,3 +338,11 @@ option {
 .itemContainerCategory {
   padding-right: 20px;
 }
+
+.itemContainerImg {
+  width: 60px;
+}
+
+.itemContainerImg img {
+  width: 100%;
+}
