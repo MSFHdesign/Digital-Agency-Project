@@ -17,14 +17,12 @@ export default function PlaceItem({ place }) {
     description = place.Descriptions[0].Text;
   }
 
-  
-  let text = description
+  let text = description;
   if (description === null) {
-    text = ''
-    };
+    text = "";
+  }
   const subText = text.substr(0, 100).concat("...");
   const [showMore, setShowMore] = useState(false);
-  console.log(text);
 
   return (
     <div className="categoryItems">
@@ -37,8 +35,12 @@ export default function PlaceItem({ place }) {
       </div>
       <p className="itemDescription">
         {showMore ? description : subText}
-          <button className="DescriptionBtn" onClick={() => setShowMore(!showMore)}>
-        {showMore ? ">" : "<"}</button>
+        <button
+          className="DescriptionBtn"
+          onClick={() => setShowMore(!showMore)}
+        >
+          {showMore ? ">" : "<"}
+        </button>
       </p>
       <button className="itemAdd">Add to trip</button>
       <div className="borderBottom"></div>
