@@ -395,3 +395,21 @@ option {
   padding-bottom: 10px;
   border-bottom: 3px solid var(--Gray2);
 }
+
+.plantrip {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.plantrip > h1 {
+  font-size: 20px;
+}
+
+.plantrip > p {
+  font-size: 16px;
+}
+
+.form > h2 {
+  margin: 0;
+  font-size: 20px;
+}

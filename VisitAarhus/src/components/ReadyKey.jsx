@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 // Magnus
 
-export default function AddArticle() {
+export default function ReadyKey() {
   const [formData, setFormData] = useState({
     title: "",
     image: "test",
@@ -53,7 +53,8 @@ export default function AddArticle() {
   };
   return (
     <div className="form">
-      <h2>Create calender</h2>
+      <h2>Got a key? </h2>
+      <label htmlFor="">insert key</label>
       <input
         type="text"
         name="title"
@@ -61,11 +62,9 @@ export default function AddArticle() {
         value={formData.title}
         onChange={(e) => handleChange(e)}
       />
-      <Link to="/discover">
-        <button className="form-control-btn" onClick={handlePublish}>
-          Create!
-        </button>{" "}
-      </Link>
+      <Link to='/seetrip'><button className="form-control-btn" onClick={handlePublish}>
+        get to trip
+      </button> </Link>
     </div>
   );
 }
