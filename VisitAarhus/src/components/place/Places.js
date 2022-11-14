@@ -11,6 +11,9 @@ import PlaceItem from "./PlaceItem";
 
 export default function Places() {
   const [places, setPlaces] = useState([]);
+  const [filter, setFilter] = useState(64);
+  console.log(filter);
+
   useEffect(() => {
     async function getPlaces() {
       const url =
@@ -22,7 +25,7 @@ export default function Places() {
       try {
         for (var i = 0; i < data.length; i++) {
           var place = data[i];
-          if (place.MainCategory.Id === 62) {
+          if (place.Category.Id === filter) {
             console.log(place.Files);
             filteredrest.push(place);
           }
@@ -37,7 +40,8 @@ export default function Places() {
 
   return (
     <div>
-      <h2> navn på det </h2>
+      <button onClick={() => setFilter(49)}>Beaches</button>
+
       {places.map((place) => (
         <PlaceItem place={place} key={place.Name + "" + place.Category.Name} />
       ))}
