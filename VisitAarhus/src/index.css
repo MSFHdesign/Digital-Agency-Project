@@ -48,18 +48,10 @@
   overflow-x: hidden;
 }
 
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
 
 .BTN {
   color: var(--BTNcolor);
@@ -375,6 +367,7 @@ option {
   justify-content: center;
   margin: 0 auto;
   font-size: 36px;
+  rotate: -90deg;
 }
 
 .itemAdd {

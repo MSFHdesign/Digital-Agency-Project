@@ -4,7 +4,6 @@
  *
  */
 import React, { useState } from "react";
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 export default function PlaceItem({ place }) {
   let image =
@@ -35,7 +34,7 @@ export default function PlaceItem({ place }) {
       <p className="itemDescription">
         {showMore ? description : subText}
           <button className="DescriptionBtn" onClick={() => setShowMore(!showMore)}>
-        {showMore ? <IoIosArrowUp/> : <IoIosArrowDown/>}</button>
+        {showMore ? ">" : "<"}</button>
       </p>
       <button className="itemAdd">Add</button>
       <div className="borderBottom"></div>
