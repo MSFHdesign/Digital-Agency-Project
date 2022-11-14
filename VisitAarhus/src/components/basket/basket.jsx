@@ -3,7 +3,7 @@ import Draggable from 'react-draggable';
 import './basketStyle.css'
 import calendar from '../../Picture/icons/calendar.png';
 
-import { useState } from 'react';
+//import { useState } from 'react';
 
 
 
@@ -13,7 +13,7 @@ export default function basket() {
 // const [tripN, setTripN] = useState([]);
   
   
- const [trip, setTrips] = useState(0);
+// const [trip, setTrips] = useState(0);
   
   return (
 
