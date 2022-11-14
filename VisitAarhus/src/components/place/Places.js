@@ -69,7 +69,11 @@ const hero = {
       "https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg",
   },
 
-  xx: { Name: "", ImageUrl: "" },
+  0: {
+    Name: "Discover",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg",
+  },
 
   xy: { Name: "", ImageUrl: "" },
 
