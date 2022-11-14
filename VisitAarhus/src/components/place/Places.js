@@ -40,8 +40,17 @@ export default function Places() {
 
   return (
     <div>
-      <button onClick={() => setFilter(49)}>Beaches</button>
+      <button className="SearchBarBTN" onClick={() => setFilter(49)}>Beaches</button>
+      <button className="SearchBarBTN" onClick={() => setFilter(64)}>Café</button>
+      <button className="SearchBarBTN" onClick={() => setFilter(47)}>Shopping</button>
+      <button className="SearchBarBTN" onClick={() => setFilter(63)}>Resturants</button>
+      <button className="SearchBarBTN" onClick={() => setFilter(48)}>Sightseen</button>
+      <button className="SearchBarBTN" onClick={() => setFilter(40)}>Cinemas</button>
+      <button className="SearchBarBTN" onClick={() => setFilter(52)}>DIY tours</button>
+      <button className="SearchBarBTN" onClick={() => setFilter(42)}>Angling</button>
+      <button className="SearchBarBTN" onClick={() => setFilter(5)}>Wellness</button>
 
+      
       {places.map((place) => (
         <PlaceItem place={place} key={place.Name + "" + place.Category.Name} />
       ))}
