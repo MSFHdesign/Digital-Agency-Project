@@ -8,6 +8,68 @@
 
 import React, { useEffect, useState } from "react";
 import PlaceItem from "./PlaceItem";
+import aarhusNightLife from "../../Picture/img/salling.jpg";
+
+const hero = [
+  {
+    Id: 63,
+    Name: "Restaurants",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/407/218969_VDKType-Restaurants.jpg",
+  },
+  {
+    Id: 64,
+    Name: "Cafés",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/407/218968_VDKType-Cafes.jpg",
+  },
+  {
+    Id: 49,
+    Name: "Beaches and lidos",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219163_VDKType-strande.jpg",
+  },
+  {
+    Id: 47,
+    Name: "Shopping",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219160_VDKType-shopping.jpg",
+  },
+  {
+    Id: 48,
+    Name: "Sightseeing",
+    ImageUrl: "https://files.guidedanmark.org/files/466/214602_vdktype-4.jpg",
+  },
+  {
+    Id: 40,
+    Name: "Theatres/Cinemas",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219170_VDKType-biografer.jpg",
+  },
+  {
+    Id: 52,
+    Name: "DIY Tours",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219166_VDKType-turforslag.jpg",
+  },
+  {
+    Id: 42,
+    Name: "Angling",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219168_VDKType-fiskevande.jpg",
+  },
+  {
+    Id: 53,
+    Name: "Wellness",
+    ImageUrl: "https://files.guidedanmark.org/files/466/214607_vdktype-13.jpg",
+  },
+  {
+    Id: 37,
+    Name: "Sport and Activities",
+    ImageUrl:
+      "https://files.guidedanmark.org/files/466/219162_VDKType-Sport-og-andre-aktiviteter.jpg",
+  },
+];
 
 export default function Places() {
   const [places, setPlaces] = useState([]);
@@ -26,7 +88,31 @@ export default function Places() {
         for (var i = 0; i < data.length; i++) {
           var place = data[i];
           if (place.Category.Id === filter) {
-            console.log(place.Files);
+            console.log(place.Category.Name);
+            filteredrest.push(place);
+          }
+        }
+      } catch (error) {
+        console.log("Oh come on! These should be easy peeps! What");
+      }
+      setPlaces(filteredrest);
+    }
+    getPlaces();
+  }, [filter]);
+
+  useEffect(() => {
+    async function getPlaces() {
+      const url =
+        "https://raw.githubusercontent.com/manypossibles/designops/master/assets/data/en/data.json";
+      const response = await fetch(url);
+      const data = await response.json();
+      const filteredrest = [];
+
+      try {
+        for (var i = 0; i < data.length; i++) {
+          var place = data[i];
+          if (place.Category.Id === filter) {
+            console.log(place.Category.Name);
             filteredrest.push(place);
           }
         }
@@ -40,17 +126,43 @@ export default function Places() {
 
   return (
     <div>
-      <button className="SearchBarBTN" onClick={() => setFilter(49)}>Beaches</button>
-      <button className="SearchBarBTN" onClick={() => setFilter(64)}>Café</button>
-      <button className="SearchBarBTN" onClick={() => setFilter(47)}>Shopping</button>
-      <button className="SearchBarBTN" onClick={() => setFilter(63)}>Resturants</button>
-      <button className="SearchBarBTN" onClick={() => setFilter(48)}>Sightseen</button>
-      <button className="SearchBarBTN" onClick={() => setFilter(40)}>Cinemas</button>
-      <button className="SearchBarBTN" onClick={() => setFilter(52)}>DIY tours</button>
-      <button className="SearchBarBTN" onClick={() => setFilter(42)}>Angling</button>
-      <button className="SearchBarBTN" onClick={() => setFilter(5)}>Wellness</button>
+      <div className="frameContainer">
+        <img className="headerImg" src={aarhusNightLife} alt="Aarhus dining" />
+        <div className="insideFrame"></div>
+        <h2 className="exsploreTitle">Discover</h2>
+      </div>
 
-      
+      <button className="SearchBarBTN" onClick={() => setFilter(49)}>
+        Beaches
+      </button>
+      <button className="SearchBarBTN" onClick={() => setFilter(64)}>
+        Café
+      </button>
+      <button className="SearchBarBTN" onClick={() => setFilter(47)}>
+        Shopping
+      </button>
+      <button className="SearchBarBTN" onClick={() => setFilter(63)}>
+        Resturants
+      </button>
+      <button className="SearchBarBTN" onClick={() => setFilter(48)}>
+        Sightseen
+      </button>
+      <button className="SearchBarBTN" onClick={() => setFilter(40)}>
+        Cinemas
+      </button>
+      <button className="SearchBarBTN" onClick={() => setFilter(52)}>
+        DIY tours
+      </button>
+      <button className="SearchBarBTN" onClick={() => setFilter(42)}>
+        Angling
+      </button>
+      <button className="SearchBarBTN" onClick={() => setFilter(53)}>
+        Wellness
+      </button>
+      <button className="SearchBarBTN" onClick={() => setFilter(37)}>
+        Sport and Activities
+      </button>
+
       {places.map((place) => (
         <PlaceItem place={place} key={place.Name + "" + place.Category.Name} />
       ))}
