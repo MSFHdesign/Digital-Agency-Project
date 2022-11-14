@@ -338,6 +338,10 @@ option {
   padding-right: 20px;
 }
 
-.itemContainerImg > img {
-  max-width: 100px;
+.itemContainerImg {
+  width: 60px;
+}
+
+.itemContainerImg img {
+  width: 100%;
 }
