@@ -108,9 +108,9 @@ const SeeTrip = () => {
         </Link>
       </div>
 
-      <div className="dato">
-        {" "}
-        <p>{date}</p>{" "}
+      <div >
+      
+        <p className="dato">{date}</p>
       </div>
 
       <Link to="/discover">

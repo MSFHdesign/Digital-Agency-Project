@@ -626,6 +626,7 @@ fieldset legend {
   font-weight: bold;
   color: var(--Blue);
 }
+
 .udenfor,
 .indenfor,
 .spisested,
@@ -708,6 +709,7 @@ fieldset legend {
 }
 
 .dato {
+  margin: var(--Mag);
   font-size: 30px;
   text-decoration:solid;
   color: #022B52;
