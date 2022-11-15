@@ -1,8 +1,12 @@
 import React from "react";
 import Accordion from "./Cards";
 import CalenderSearch from "../Picture/icons/menu/Picture1.png";
+import {Link} from 'react-router-dom'
 
 const SeeTrip = () => {
+  const current = new Date();
+  const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+
   const accordionData = [
     {
       Name: "Peter Gift",
@@ -96,6 +100,14 @@ const SeeTrip = () => {
         <h2>My Trip</h2>
         <img src={CalenderSearch} alt="billede"></img>
       </div>
+
+      <div className='dato'> <p>{date}</p> </div>
+
+
+      <Link to='/discover'> <div className='addnew'>
+  <div> <div className="inside new"> Add new</div> </div> <div> <div className="ned">+</div></div>
+</div></Link>
+
       <div className="accordion">
         {accordionData.map(
           ({ Name, AddressLine, PostalCode, City, Phone, type, type2 }) => (

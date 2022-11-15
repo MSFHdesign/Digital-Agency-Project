@@ -606,7 +606,8 @@ fieldset legend {
 
 .udenfor,
 .indenfor,
-.spisested {
+.spisested,
+.addnew {
   margin: var(--Mag);
   font-size: 20px;
 }
@@ -624,6 +625,7 @@ fieldset legend {
 }
 
 .accordion-show,
+.addnew,
 .udenforaktiv,
 .indenforaktiv,
 .spisestedaktiv {
@@ -664,4 +666,15 @@ fieldset legend {
 .inside p {
   font-size: 16px;
   padding-left: 10px;
+}
+
+
+
+.addnew {
+
+  border: #CED2D3 solid 2px;
+
+}
+.new {
+  color: #CED2D3
 }
