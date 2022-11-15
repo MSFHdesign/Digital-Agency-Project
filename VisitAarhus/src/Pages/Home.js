@@ -33,8 +33,8 @@ export default function Home() {
         <img className="HomeExploreBtn" src={flag} alt="Aarhus Events" />
       </div>
 
-      <p>Already have a trip planned?</p>
-      <p>
+      <p className="tokeyBtnText">Already have a trip planned?</p>
+      <p className="tokeyBtnText">
         Find it
         <button className="toKeyBtn add" onClick={() => setIsActive(!isActive)}>
           here
