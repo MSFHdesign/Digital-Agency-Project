@@ -32,7 +32,7 @@ export default function Home() {
       </div>
 
       <p>Already have a trip planned?</p>
-      <p>Find it</p>
+      <p>Find it<button className='toKeyBtn add' onClick={onToggleClick}>here</button></p>
       
       <div ref={navRef} className="insertKeyContainer">
         <ReadyKey/>
