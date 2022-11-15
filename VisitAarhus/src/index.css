@@ -292,13 +292,17 @@ option {
   border: 4px solid var(--LgBlue);
 }
 
+.insertKeyContainer .show{
+  display: block;
+}
+
 .insertKeyContainer {
   position: absolute;
   z-index: 4;
   top: 120px;
   background-color: var(--Hvid);
   height: 100vh;
-  /* display: none; */
+  display: none;
 }
 
 .insertKeyContainer h3 {
@@ -334,6 +338,12 @@ option {
 .keyInput img {
   width: 15%;
 }
+
+.toKeyBtn {
+  background-color: transparent;
+  border: none;
+}
+
 
 .form-control-btn {
   padding: 10px 40px;

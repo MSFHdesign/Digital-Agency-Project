@@ -23,7 +23,7 @@ function App() {
       <Basket/>
       <div className='HeaderTop Flexbox dirRow'>
         <div className='Fixedbar'>
-          <div className='Flexbox dirRow'>
+          <div className='HeaderTop Flexbox dirRow'>
             <LogoTop/>
             <Nav/>  
           </div>

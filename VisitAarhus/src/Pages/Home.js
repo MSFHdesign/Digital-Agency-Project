@@ -4,12 +4,18 @@ import bag from '../Picture/icons/bag.png';
 import coffee from '../Picture/icons/coffee.png';
 import flag from '../Picture/icons/flag.png';
 import React from 'react'
+import { Link } from "react-router-dom";
 
 // Components 
-import AddArticle from '../components/firebase tilfoej copy'
+// import AddArticle from '../components/firebase tilfoej copy'
 import ReadyKey from '../components/ReadyKey.jsx'
 
 export default function Home() {
+  const navRef = React.useRef(null);
+  const onToggleClick = (e) => {
+    navRef.current.classList.toggle("show");
+  };
+
   return (
     <div className='BoxContainer'>
       <div className='frameContainer'>
@@ -25,11 +31,12 @@ export default function Home() {
         <img className='HomeExploreBtn' src={flag} alt = 'Aarhus Events'/>
       </div>
 
-      {/* beskrivelse */}
+      <p>Already have a trip planned?</p>
+      <p>Find it</p>
       
-      {/* her skal der vææære noget der beskriver det med at få en nøgle */}
-      {/* Allerede oprettet tekst  */}
-      <ReadyKey />
+      <div ref={navRef} className="insertKeyContainer">
+        <ReadyKey/>
+      </div>
     </div>
   )
 }
