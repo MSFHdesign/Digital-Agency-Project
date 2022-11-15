@@ -99,7 +99,9 @@ export default function Places() {
           if (place.Category.Id === filter) {
             filteredrest.push(place);
           } else {
-            filteredrest.push(place);
+            if (filter === 0) {
+              filteredrest.push(place);
+            }
           }
         }
       } catch (error) {

@@ -1,14 +1,16 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import AddArticle from "../components/firebase tilfoej copy";
 import aarhusNightLife from "../Picture/img/aarhus-nightlife.jpg";
 
-export default function planTrip() {
+export default function PlanTrip() {
+  const location = useLocation();
   return (
     <div className="plantrip">
       <div className="frameContainer">
         <img className="headerImg" src={aarhusNightLife} alt="Aarhus dining" />
         <div className="insideFrame"></div>
-        <h2 className="exsploreTitle">Home</h2>
+        <h2 className="exsploreTitle"> {location.pathname} </h2>
       </div>
 
       <h1>Plan new trip</h1>
