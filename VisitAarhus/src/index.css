@@ -48,10 +48,18 @@
   overflow-x: hidden;
 }
 
-a:link {text-decoration: none;}
-a:visited {text-decoration: none;}
-a:hover {text-decoration: none;}
-a:active {text-decoration: none;}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
 
 .BTN {
   color: var(--BTNcolor);
@@ -112,7 +120,7 @@ code {
   width: 100%;
   padding: var(--Pad);
   justify-content: space-evenly;
-} 
+}
 
 #searchBar {
   padding-left: 0px;
@@ -293,7 +301,7 @@ option {
   border: 4px solid var(--LgBlue);
 }
 
-.insertKeyContainer .show{
+.insertKeyContainer .show {
   display: block;
 }
 
@@ -344,7 +352,6 @@ option {
   background-color: transparent;
   border: none;
 }
-
 
 .form-control-btn {
   padding: 10px 40px;
@@ -543,12 +550,12 @@ option {
   border: none;
   width: 100%;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .form-control-btn {
   background-color: var(--DkYellow);
   color: var(--Hvid);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: bold;
   padding: 10px 30px;
@@ -564,4 +571,78 @@ fieldset {
 fieldset legend {
   color: var(--Blue);
   font-weight: bold;
+}
+
+.myTripHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.myTripHeader img {
+  width: 100px;
+  margin-bottom: 10vw;
+}
+
+.udenfor,
+.indenfor,
+.spisested {
+  margin: var(--Mag);
+  font-size: 20px;
+}
+
+.udenfor {
+  border: #a3eabf solid 2px;
+}
+
+.indenfor {
+  border: #c3ebff solid 2px;
+}
+
+.spisested {
+  border: #ffe882 solid 2px;
+}
+
+.accordion-show,
+.udenforaktiv,
+.indenforaktiv,
+.spisestedaktiv {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--Pad);
+  align-items: center;
+}
+
+.udenforaktiv {
+  background-color: #a3eabf;
+}
+
+.indenforaktiv {
+  background-color: #c3ebff;
+}
+
+.spisestedaktiv {
+  background-color: #ffe882;
+}
+
+.henad {
+  font-size: 36px;
+  padding-right: 1vw;
+}
+
+.ned {
+  transform: rotate(90deg);
+  font-size: 36px;
+  padding-right: 1vw;
+}
+
+.inside {
+  display: block;
+  padding: --p;
+}
+
+.inside p {
+  font-size: 16px;
+  padding-left: 10px;
 }

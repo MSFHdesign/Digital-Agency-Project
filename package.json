@@ -4,7 +4,6 @@
     "hamburger-react": "^2.5.0",
     "nav": "^0.0.2",
     "react-animated-burgers": "^1.2.8",
-    "react-draggable": "^4.4.5",
     "react-router-dom": "^6.4.3"
   }
 }
