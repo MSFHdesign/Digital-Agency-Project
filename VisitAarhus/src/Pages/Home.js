@@ -40,8 +40,9 @@ export default function Home() {
           <p>Events</p>
         </div>
       </div>
-
-      <button className="form-control-btn getStartedBtn">Get started</button>
+      <Link to="/discover">
+        <button className="form-control-btn getStartedBtn">Get started</button>
+      </Link>
 
       <p className="tokeyBtnText">Already have a trip planned?</p>
       <p className="tokeyBtnText">
