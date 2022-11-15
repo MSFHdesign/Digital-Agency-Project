@@ -732,3 +732,19 @@ fieldset legend {
   padding-bottom: 10px;
   font-size: 16px;
 }
+/* ----Edit trip----- */
+
+.editMyTrip {
+  width:80%;
+  margin: 0 auto;
+  text-align: center;
+  border: var(--Gray2) solid 3px;
+}
+.editBtnBox {
+  display: flex;
+  padding-bottom: 20px;
+}
+.editBtn,
+.deleteBtn {
+  margin-top: 0;
+}

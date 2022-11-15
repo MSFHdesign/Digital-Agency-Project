@@ -10,6 +10,10 @@ export default function EditTrip() {
             <img src={CalenderSearch} alt="billede"></img>
             <div className="editMyTrip">
                 <h3>My trip</h3>
+                <div className="editBtnBox">
+                    <button className="editBtn form-control-btn">Edit</button>
+                    <button className="deleteBtn form-control-btn">Delete</button>
+                </div>
             </div>
         </div>
     )
