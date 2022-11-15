@@ -21,7 +21,7 @@
 
   /* Tekst */
   --FontColor: #000000;
-  --Fontsize: 12px;
+  --Fontsize: 16px;
 
   /* Paddinng margin & snizzle */
 
@@ -37,7 +37,7 @@
   --BTNcolor: #f2f2f2;
   --BTNminWidth: 100px;
   --BTNminHeight: 33px;
-  --BTNfontsize: 10px;
+  --BTNfontsize: 18px;
 
   /* Logo */
   --logoSize: 200px;
@@ -100,7 +100,7 @@ code {
 
 .HeaderTop {
   position: fixed;
-  top: 0px;
+  /* top: 0px; */
   flex-direction: row;
   z-index: 5;
   background-color: var(--Hvid);
@@ -514,8 +514,7 @@ option {
 }
 
 .plantrip {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .plantrip > h1 {
@@ -526,7 +525,42 @@ option {
   font-size: 16px;
 }
 
+.discover-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .form > h2 {
   margin: 0;
   font-size: 20px;
+}
+.tripcontainer {
+  width: 90%;
+  margin: 0 auto;
+}
+.form-control {
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+.form-control-btn {
+  background-color: var(--DkYellow);
+  color: var(--Hvid);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 27px;
+  min-height: var(--BTNminHeight);
+  min-width: var(--BTNminWidth);
+}
+fieldset {
+  border-color: var(--Blue);
+  border-width: 3px;
+}
+fieldset legend {
+  color: var(--Blue);
+  font-weight: bold;
 }
