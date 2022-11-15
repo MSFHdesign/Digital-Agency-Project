@@ -725,9 +725,10 @@ fieldset legend {
   position: absolute;
   border: var(--Gray1) 2px solid;
   color: #022b52; 
-  background-color: transparent;
+  background-color: var(--Hvid);
   padding: 5px 20px;
   border-radius: 26px;
-
-
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
 }
