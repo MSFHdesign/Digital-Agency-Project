@@ -1,7 +1,22 @@
-import React from 'react'
+import React from 'react';
+import Cards from './Cards.jsx';
 
 export default function seeTrip() {
   return (
-    <div><h2>SEE TRIIIIP</h2></div>
+    <div>
+      <button className='backBTN'> BACK </button>
+      <h2> My Trip</h2>
+      
+      <p> dato </p>
+
+
+      <Cards />
+        
+
+    </div>
+  
+
+
+
   )
 }

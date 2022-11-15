@@ -21,7 +21,7 @@ export default function basket() {
       
      
         <div className='BasketDragable'>
-          <div> <p>1</p> </div>
+         
         <img className='menuItemImg' src={calendar} alt='MenuIcon' />
      
         </div>
