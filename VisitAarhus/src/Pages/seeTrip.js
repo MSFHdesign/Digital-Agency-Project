@@ -1,11 +1,13 @@
 import React from "react";
 import Accordion from "./Cards";
 import CalenderSearch from "../Picture/icons/menu/Picture1.png";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const SeeTrip = () => {
   const current = new Date();
-  const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+  const date = `${current.getDate()}/${
+    current.getMonth() + 1
+  }/${current.getFullYear()}`;
 
   const accordionData = [
     {
@@ -14,8 +16,8 @@ const SeeTrip = () => {
       PostalCode: "8000",
       City: "Aarhus C",
       Phone: "+45 86 12 01 63",
-      type: "indenfor",
-      type2: "indenforaktiv",
+      type: "spisested",
+      type2: "spisestedaktiv",
     },
     {
       Name: "Ballehage Beach",
@@ -101,12 +103,24 @@ const SeeTrip = () => {
         <img src={CalenderSearch} alt="billede"></img>
       </div>
 
-      <div className='dato'> <p>{date}</p> </div>
+      <div className="dato">
+        {" "}
+        <p>{date}</p>{" "}
+      </div>
 
-
-      <Link to='/discover'> <div className='addnew'>
-  <div> <div className="inside new"> Add new</div> </div> <div> <div className="ned">+</div></div>
-</div></Link>
+      <Link to="/discover">
+        {" "}
+        <div className="addnew">
+          <div>
+            {" "}
+            <div className="inside new"> Add new</div>{" "}
+          </div>{" "}
+          <div>
+            {" "}
+            <div className="ned">+</div>
+          </div>
+        </div>
+      </Link>
 
       <div className="accordion">
         {accordionData.map(
