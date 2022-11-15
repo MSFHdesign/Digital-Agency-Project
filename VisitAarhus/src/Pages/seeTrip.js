@@ -99,8 +99,11 @@ const SeeTrip = () => {
   return (
     <div>
       <div className="myTripHeader BoxContainer">
-        <h2>My Trip</h2>
-        <img src={CalenderSearch} alt="billede"></img>
+        <h2>My trip</h2>
+        <Link to="/edittrip" className="editTripBtn">
+          <img src={CalenderSearch} alt="billede"></img>
+          <p>Edit</p>
+        </Link>
       </div>
 
       <div className="dato">

@@ -617,9 +617,15 @@ fieldset legend {
 
 .myTripHeader img {
   width: 100px;
-  margin-bottom: 10vw;
+  /* margin-bottom: 10vw; */
 }
-
+.editTripBtn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  color: var(--Blue);
+}
 .udenfor,
 .indenfor,
 .spisested,
@@ -640,6 +646,10 @@ fieldset legend {
   border: #ffe882 solid 2px;
 }
 
+.accordion {
+  font-weight: bold;
+  color: var(--Blue);
+}
 .accordion-show,
 .addnew,
 .udenforaktiv,
