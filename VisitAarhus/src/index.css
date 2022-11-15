@@ -602,7 +602,7 @@ fieldset legend {
   width: 100px;
   margin-bottom: 10vw;
 }
-
+.dato,
 .udenfor,
 .indenfor,
 .spisested,
@@ -624,6 +624,7 @@ fieldset legend {
 }
 
 .accordion-show,
+
 .addnew,
 .udenforaktiv,
 .indenforaktiv,
@@ -663,6 +664,7 @@ fieldset legend {
 }
 
 .inside p {
+
   font-size: 16px;
   padding-left: 10px;
 }
@@ -676,4 +678,27 @@ fieldset legend {
 }
 .new {
   color: #CED2D3
+}
+
+.dato {
+  font-size: 30px;
+  text-decoration:solid;
+  color: #022B52;
+
+
+
+}
+
+
+.backBTN {
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  border: var(--Gray1) 2px solid;
+  color: #022b52; 
+  background-color: transparent;
+  padding: 5px 20px;
+  border-radius: 26px;
+
+
 }

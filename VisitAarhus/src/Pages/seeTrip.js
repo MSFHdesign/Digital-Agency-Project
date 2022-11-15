@@ -1,12 +1,13 @@
 import React from "react";
 import Accordion from "./Cards";
 import CalenderSearch from "../Picture/icons/menu/Picture1.png";
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 const SeeTrip = () => {
   const current = new Date();
   const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
-
+  const navigate = useNavigate();
+  
   const accordionData = [
     {
       Name: "Peter Gift",
@@ -96,13 +97,18 @@ const SeeTrip = () => {
 
   return (
     <div>
+      <div >
+        <button className="backBTN" onClick={() => navigate(-1)}>Go back</button>
+        </div>
       <div className="myTripHeader BoxContainer">
+    
+
         <h2>My Trip</h2>
         <img src={CalenderSearch} alt="billede"></img>
       </div>
 
-      <div className='dato'> <p>{date}</p> </div>
-
+      <div > <p className='dato'> {date}</p> </div>
+     
 
       <Link to='/discover'> <div className='addnew'>
   <div> <div className="inside new"> Add new</div> </div> <div> <div className="ned">+</div></div>
