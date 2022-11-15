@@ -21,14 +21,14 @@ function App() {
   return (
     <div className="App">
       <Basket/>
-      <div className='HeaderTop Flexbox dirRow'>
-        <div className='Fixedbar'>
-          <div className='HeaderTop Flexbox dirRow'>
+      <div className='HeaderTop Flexbox'>
+        {/* <div className='Fixedbar'> */}
+          <div className='Flexbox'>
             <LogoTop/>
             <Nav/>  
           </div>
-        </div>
-        <Searchbar />
+          <Searchbar />
+        {/* </div> */}
       </div>
       <Routes> 
         <Route path='/' element={<Home/>}/>
