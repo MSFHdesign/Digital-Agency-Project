@@ -92,7 +92,7 @@ const SeeTrip = () => {
 
   return (
     <div>
-      <div className="myTripHeader">
+      <div className="myTripHeader BoxContainer">
         <h2>My Trip</h2>
         <img src={CalenderSearch} alt="billede"></img>
       </div>
