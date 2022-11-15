@@ -728,7 +728,13 @@ fieldset legend {
   background-color: var(--Hvid);
   padding: 5px 20px;
   border-radius: 26px;
+<<<<<<< Updated upstream
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 16px;
 }
+=======
+
+}
+
+>>>>>>> Stashed changes
