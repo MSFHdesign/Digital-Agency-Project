@@ -320,13 +320,16 @@ option {
   display: block;
 }
 
+.displaynone {
+  display: none;
+}
+
 .insertKeyContainer {
   position: absolute;
   z-index: 4;
   top: 120px;
   background-color: var(--Hvid);
   height: 100vh;
-  display: none;
 }
 
 .insertKeyContainer h3 {
