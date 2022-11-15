@@ -7,7 +7,8 @@ import Personalpage from './Pages/Gunvorsplan.js'
 import Fejl from './Pages/fejl.js';
 import DeleteTrip from './Pages/deleteTrip.js';
 import PlanTrip from './Pages/planTrip.js';
-import SeeTrip from './Pages/seeTrip'
+import SeeTrip from './Pages/seeTrip';
+import EditTrip from './Pages/editTrip.js';
 
 
 
@@ -38,6 +39,7 @@ function App() {
         <Route path='/delete' element ={<DeleteTrip />} />
         <Route path='/plan' element ={<PlanTrip />} />
         <Route path='/seetrip' element ={<SeeTrip />} />
+        <Route path='/edittrip' element ={<EditTrip />} />
       </Routes>
     </div>
     );

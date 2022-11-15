@@ -23,15 +23,25 @@ export default function Home() {
       </div>
 
       <div className="HomeExploreBtnContainer">
-        <img className="HomeExploreBtn" src={bank} alt="Aarhus Attractions" />
-        <img className="HomeExploreBtn" src={bag} alt="Aarhus Activities" />
-        <img
-          className="HomeExploreBtn"
-          src={coffee}
-          alt="Aarhus Places to Eat"
-        />
-        <img className="HomeExploreBtn" src={flag} alt="Aarhus Events" />
+        <div className="HomeExploreBtn">
+          <img src={bank} alt="Aarhus Attractions" />
+          <p>Attractions</p>
+        </div>
+        <div className="HomeExploreBtn">
+          <img src={bag} alt="Aarhus Activities" />
+          <p>Activities</p>
+        </div>
+        <div className="HomeExploreBtn">
+          <img src={coffee} alt="Aarhus Places to Eat"/>
+          <p>Places to eat</p>
+        </div>
+        <div className="HomeExploreBtn">
+          <img src={flag} alt="Aarhus Events" />
+          <p>Events</p>
+        </div>
       </div>
+
+      <button className="form-control-btn getStartedBtn">Get started</button>
 
       <p className="tokeyBtnText">Already have a trip planned?</p>
       <p className="tokeyBtnText">

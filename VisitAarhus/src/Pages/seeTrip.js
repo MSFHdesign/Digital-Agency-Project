@@ -15,8 +15,8 @@ const SeeTrip = () => {
       PostalCode: "8000",
       City: "Aarhus C",
       Phone: "+45 86 12 01 63",
-      type: "indenfor",
-      type2: "indenforaktiv",
+      type: "spisested",
+      type2: "spisestedaktiv",
     },
     {
       Name: "Ballehage Beach",
@@ -101,18 +101,31 @@ const SeeTrip = () => {
         <button className="backBTN" onClick={() => navigate(-1)}>Go back</button>
         </div>
       <div className="myTripHeader BoxContainer">
-    
-
-        <h2>My Trip</h2>
-        <img src={CalenderSearch} alt="billede"></img>
+        <h2>My trip</h2>
+        <Link to="/edittrip" className="editTripBtn">
+          <img src={CalenderSearch} alt="billede"></img>
+          <p>Edit</p>
+        </Link>
       </div>
 
-      <div > <p className='dato'> {date}</p> </div>
-     
+      <div className="dato">
+        {" "}
+        <p>{date}</p>{" "}
+      </div>
 
-      <Link to='/discover'> <div className='addnew'>
-  <div> <div className="inside new"> Add new</div> </div> <div> <div className="ned">+</div></div>
-</div></Link>
+      <Link to="/discover">
+        {" "}
+        <div className="addnew">
+          <div>
+            {" "}
+            <div className="inside new"> Add new</div>{" "}
+          </div>{" "}
+          <div>
+            {" "}
+            <div className="ned">+</div>
+          </div>
+        </div>
+      </Link>
 
       <div className="accordion">
         {accordionData.map(

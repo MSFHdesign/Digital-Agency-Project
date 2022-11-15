@@ -296,10 +296,26 @@ option {
 }
 
 .HomeExploreBtn {
-  width: 20%;
-  padding: 30px;
+  width: 120px;
+  height: 120px;
   margin: 40px 10px 10px;
   border: 4px solid var(--LgBlue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomeExploreBtn img {
+  width: 50%;
+}
+
+.HomeExploreBtn p {
+  margin: 0;
+}
+
+.getStartedBtn {
+  margin: 20px auto !important;
 }
 
 .tokeyBtnText {
@@ -327,9 +343,10 @@ option {
 .insertKeyContainer {
   position: absolute;
   z-index: 4;
-  top: 120px;
+  top: 60px;
   background-color: var(--Hvid);
   height: 100vh;
+  width: 100%;
 }
 
 .insertKeyContainer h3 {
@@ -600,9 +617,15 @@ fieldset legend {
 
 .myTripHeader img {
   width: 100px;
-  margin-bottom: 10vw;
+  /* margin-bottom: 10vw; */
 }
-.dato,
+.editTripBtn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  color: var(--Blue);
+}
 .udenfor,
 .indenfor,
 .spisested,
@@ -623,6 +646,10 @@ fieldset legend {
   border: #ffe882 solid 2px;
 }
 
+.accordion {
+  font-weight: bold;
+  color: var(--Blue);
+}
 .accordion-show,
 
 .addnew,
