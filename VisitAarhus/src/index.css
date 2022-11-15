@@ -92,29 +92,33 @@ code {
     monospace;
 }
 /* FLEXBOX */
-
 .Flexbox {
-  /* padding-top: var(--Pad); */
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
 }
-.dirRow {
+
+.HeaderTop {
+  position: fixed;
+  top: 0px;
   flex-direction: row;
+  z-index: 5;
+  background-color: var(--Hvid);
 }
+
 .searchbar {
   background-color: var(--LgBlue);
   width: 100%;
   padding: var(--Pad);
-  justify-content: flex-end;
-}
+  justify-content: space-evenly;
+} 
 
 #searchBar {
-  padding-left: 5px;
+  padding-left: 0px;
 }
 
 .searchbar > img {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .searchbar > input {
@@ -122,7 +126,7 @@ code {
   border: none;
   color: var(--Blue);
   font-family: "Montserrat", sans-serif;
-  width: 72%;
+  width: 70%;
   font-size: 18px;
 }
 *:focus {
@@ -274,6 +278,86 @@ option {
   height: 40px;
 }
 
+.HomeExploreBtnContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.HomeExploreBtn {
+  width: 20%;
+  padding: 30px;
+  margin: 40px 10px 10px;
+  border: 4px solid var(--LgBlue);
+}
+
+.insertKeyContainer {
+  position: absolute;
+  z-index: 4;
+  top: 57px;
+  background-color: var(--Hvid);
+  height: 100vh;
+  display: none;
+}
+
+.insertKeyContainer h3 {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.insertKeyContainer fieldset {
+  width: 80%;
+  margin: 0 auto;
+  border: 4px solid var(--Blue);
+}
+
+.insertKeyContainer legend {
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.keyInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyInput input {
+  border-width: 0;
+  width: 80%;
+  color: var(--Gray1);
+  font-size: 18px;
+}
+
+.keyInput img {
+  width: 15%;
+}
+
+.form-control-btn {
+  padding: 10px 40px;
+  background-color: var(--DkYellow);
+  border-radius: 50px;
+  border-width: 0;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 0;
+  font-size: 20px;
+  color: var(--Hvid);
+}
+
+.BackBtn {
+  transform: rotate(0.25turn);
+  border-radius: 50px;
+  border-width: 0;
+  padding: 20px 20px 15px;
+  background-color: var(--LgBlue);
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
 /* discover food */
 .frameContainer {
   width: 100%;
@@ -312,6 +396,7 @@ option {
 
 .BoxContainer {
   width: 100vw;
+  margin-top: 57px;
 }
 
 .SearchBarExpandBtn {
