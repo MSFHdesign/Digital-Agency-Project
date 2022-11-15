@@ -4,7 +4,7 @@ import bag from "../Picture/icons/bag.png";
 import coffee from "../Picture/icons/coffee.png";
 import flag from "../Picture/icons/flag.png";
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // Components
 // import AddArticle from '../components/firebase tilfoej copy'
