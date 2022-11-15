@@ -53,19 +53,25 @@ export default function AddArticle() {
   };
   return (
     <div className="form">
-      <h2>Create calender</h2>
+      <h2>Create trip</h2>
+      <fieldset className="name-trip">
+      <legend>Name trip</legend>
       <input
         type="text"
         name="title"
         className="form-control"
+        // placeholder="Name your trip..."
         value={formData.title}
         onChange={(e) => handleChange(e)}
       />
+      </fieldset>
+      <div className="discover-btn">
       <Link to="/discover">
         <button className="form-control-btn" onClick={handlePublish}>
-          Create!
+          Create
         </button>{" "}
       </Link>
+      </div>
     </div>
   );
 }

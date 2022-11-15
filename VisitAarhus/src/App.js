@@ -19,29 +19,27 @@ import Basket from './components/basket/basket'
 
 function App() {
   return (
-        <div className="App">
-           <Basket/>
+    <div className="App">
+      <Basket/>
+      <div className='HeaderTop Flexbox dirRow'>
+        <div className='Fixedbar'>
           <div className='HeaderTop Flexbox dirRow'>
-          <div className='Fixedbar'><div className='HeaderTop Flexbox dirRow'>
-        
-            <LogoTop/> <Nav/>  </div>
+            <LogoTop/>
+            <Nav/>  
           </div>
-            <Searchbar />
-            </div>
-            <Routes> 
-              <Route path='/' element={<Home/>}/>
-              <Route path='/discover' element={<Discover/>}/>
-              <Route path='/Personalspace' element={<Personalpage/>}/>
-              <Route path='/*' element={<Fejl/>}/>
-              <Route path='/delete' element ={<DeleteTrip />} />
-              <Route path='/plan' element ={<PlanTrip />} />
-              <Route path='/seetrip' element ={<SeeTrip />} />
-
-
-          </Routes>
-         
-
         </div>
+        <Searchbar />
+      </div>
+      <Routes> 
+        <Route path='/' element={<Home/>}/>
+        <Route path='/discover' element={<Discover/>}/>
+        <Route path='/Personalspace' element={<Personalpage/>}/>
+        <Route path='/*' element={<Fejl/>}/>
+        <Route path='/delete' element ={<DeleteTrip />} />
+        <Route path='/plan' element ={<PlanTrip />} />
+        <Route path='/seetrip' element ={<SeeTrip />} />
+      </Routes>
+    </div>
     );
   }
 
