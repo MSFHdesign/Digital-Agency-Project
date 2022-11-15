@@ -65,7 +65,7 @@ export default function AddArticle() {
         onChange={(e) => handleChange(e)}
       />
       </fieldset>
-      <div>
+      <div className="discover-btn">
       <Link to="/discover">
         <button className="form-control-btn" onClick={handlePublish}>
           Create
