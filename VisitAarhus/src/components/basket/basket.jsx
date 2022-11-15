@@ -1,5 +1,5 @@
 //import React, { useState } from 'react'
-import Draggable from 'react-draggable';
+import {Link} from 'react-router-dom';
 import './basketStyle.css'
 import calendar from '../../Picture/icons/calendar.png';
 
@@ -16,16 +16,10 @@ export default function basket() {
 // const [trip, setTrips] = useState(0);
   
   return (
-
-    <Draggable bounds="parent">
-      
-     
         <div className='BasketDragable'>
-         
-        <img className='menuItemImg' src={calendar} alt='MenuIcon' />
-     
+          <Link to='/seetrip'>
+             <img className='menuItemImg' src={calendar} alt='MenuIcon' />
+          </Link>
         </div>
-     
-    </Draggable>
   )
 }
