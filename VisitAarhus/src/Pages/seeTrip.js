@@ -1,7 +1,8 @@
-import React from "react";
-import Cards from "./Cards.jsx";
+import React from 'react';
+import Accordion from './Cards';
 
-[
+const SeeTrip = () => {
+  const accordionData= [
   {
     Name: "Peter Gift",
     AddressLine: "M. P. Bruuns Gade 28",
@@ -78,15 +79,16 @@ import Cards from "./Cards.jsx";
   },
 ];
 
-export default function seeTrip() {
   return (
     <div>
-      <button className="backBTN"> BACK </button>
-      <h2> My Trip</h2>
-
-      <p> dato </p>
-
-      <Cards />
+      <h1>React Accordion Demo</h1>
+      <div className="accordion">
+        {accordionData.map(({ Name, AddressLine,PostalCode,City,Phone,type }) => (
+          <Accordion title={Name} adr={AddressLine} type={type} zip={PostalCode} city={City} phone={Phone} />
+        ))}
+      </div>
     </div>
   );
-}
+};
+
+export default SeeTrip;
